@@ -1,0 +1,369 @@
+.footer {
+    padding: 90px 0;
+    background-color: $bgGray;
+
+    &__logo {
+        margin-bottom: 55px;
+        display: inline-block;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__col {
+        width: 25%;
+    }
+
+    &__social__text {
+        @extend %font18;
+        line-height: 122%;
+        margin-bottom: 15px;
+        color: $lightBlue;
+    }
+
+    &__social__item {
+        margin-right: 16px;
+        display: inline-block;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__menu {
+        color: $lightBlue;
+        @extend %font20;
+        line-height: 110%;
+    }
+
+    &__menu__item {
+        margin-bottom: 25px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__contacts {
+        color: $lightBlue;
+        @extend %font20;
+        line-height: 130%;
+    }
+
+    &__contacts__item {
+        padding-left: 34px;
+        margin-bottom: 24px;
+        display: block;
+        max-width: 230px;
+        position: relative;
+
+        &_phone {
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                content: '';
+                width: 19px;
+                height: 19px;
+                background-image: url(../img/icons/phone.svg);
+
+            }
+        }
+
+        &_address {
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 2px;
+                margin: auto;
+                content: '';
+                width: 19px;
+                height: 19px;
+                background-image: url(../img/icons/placemark.svg);
+
+            }
+        }
+    }
+
+    &__form {      
+        max-width: 360px;
+        margin: 0 0 0 auto;
+    }
+
+    &__form__item {
+        margin-bottom: 20px;
+        display: block;
+    }
+    &__form__input {
+        width: 100%;
+        @extend %font20;
+        background-color: $white;
+        font-family: $mazzard;
+        color: $lightBlue;
+        padding: 17px 20px 14px;
+        line-height: 1;
+        box-shadow: 0px 8px 35px rgba(207, 221, 234, 0.8);
+        border-radius: 5px;
+        border: 1px solid $white;
+        outline: none;        
+
+        &::placeholder {
+            color: $faqBorder;
+            font-family: $mazzard;
+        }
+    }
+
+    &__form__submit {
+        @extend %font20;
+        font-family: $mazzard;
+        width: 100%;
+        padding: 17px 0 16px;
+        box-shadow: 4px 14px 23px rgba(247, 147, 26, 0.4);
+        border-radius: 5px;
+        color: $white;
+        border: none;
+        display: block;
+        font-weight: 700;
+        appearance: none;
+    }
+}
+
+.rights {
+    padding: 34px 0;
+    background-color: $white;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text,
+    &__link {
+        @extend %font18;
+    }
+
+    &__text {
+        color: $baseColor;
+    }
+
+    &__link {
+        color: $blue;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &__logo {
+            margin-bottom: 30px;
+        }
+
+        &__social__text {
+            font-size: 16px;
+        }
+    
+        &__social__item {
+            margin-right: 10px;
+    
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        &__menu {
+            font-size: 16px;
+        }
+    
+        &__menu__item {
+            margin-bottom: 15px;
+    
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &__contacts {
+            font-size: 16px;
+        }
+
+        &__form__item {
+            margin-bottom: 15px;
+        }
+        &__form__input {
+            font-size: 16px;
+            padding: 10px 15px 9px;   
+        }
+    
+        &__form__submit {
+            font-size: 16px;
+            padding: 11px 0 10px;
+            
+        }
+    }
+
+    .rights {    
+        padding: 20px 0;
+        &__text,
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__wrap {
+            position: relative;
+        }
+
+        &__logo {
+            max-width: 150px;
+            img {
+                width: 100%;
+            }
+        }
+        &__row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__col {
+            width: 100%;
+
+            &_social {
+                order: 4;
+            }
+
+            &_menu {
+                order: 1;
+            }
+
+            &_contacts {
+                order: 2;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            &_form {
+                order: 3;
+            }
+        }
+
+        &__social {
+            text-align: center;
+        }
+
+        &__social__text {
+            display: none;
+        }
+    
+        &__social__item {
+            margin-right: 6px;
+            
+        }
+
+        &__contacts {
+            font-size: 14px;
+        }
+
+        &__contacts__item {
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            margin-left: auto;            
+            max-width: 133px;
+            position: relative;
+    
+            &_phone {
+                &:before {
+                    background-size: cover; 
+                    width: 12px;
+                    height: 12px;   
+                }
+            }
+    
+            &_address {
+                display: none;
+            }
+        }
+
+        &__form {      
+            max-width: 360px;
+            margin: 30px auto 30px auto;
+        }
+    }
+
+    .rights {    
+        &__text,
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 80px 0;
+    }
+
+    .rights {    
+        &__text,
+        &__link {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 40px 0;
+
+        &__logo {
+            max-width: 106px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__menu {
+            font-size: 12px;
+        }
+
+        &__menu__item {
+            margin-bottom: 10px;
+    
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &__contacts__item {
+            margin-top: 10px;
+        }
+
+        &__form__input {
+            font-size: 12px;
+            padding: 8px 15px 6px;   
+        }
+    
+        &__form__submit {
+            font-size: 12px;
+            padding: 9px 0 7px;
+            
+        }
+    }
+
+    .rights {    
+        padding: 14px 0;
+
+        &__wrap {
+            display: block;
+        }
+        &__text,
+        &__link {
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,684 @@
+.ipoteka-section {
+    padding: 110px 0 100px;
+    background-color: $bgGray;
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 700;
+        color: $baseColor;
+    }
+
+    &__subtitle {
+        @extend %font22;
+        color: $baseColor;
+        line-height: 150%;
+        margin-bottom: 71px;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__col {
+        width: 50%;
+
+        &:first-of-type {
+            padding-right: 25px;
+        }
+    }
+
+    &__advantages__item {
+        @extend %font20;
+        color: $lightBlue;
+        position: relative;
+        padding-left: 0;
+        transition: 0.2s;
+        margin-bottom: 45px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        &:hover {
+            padding-left: 49px;
+            color: $baseColor;
+
+            &:before {
+                opacity: 1;
+                
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 28px;
+            height: 21px;
+            background-image: url('../img/icons/check.svg');
+            transition: 0.3s;
+            opacity: 0;
+        }
+    }
+
+    &__consultant {
+        margin-top: 70px;
+        position: relative;
+        font-size: 21px;
+        line-height: 145%;
+        color: $baseColor;
+        font-weight: 700;
+        border: 2px solid $yellow;
+        height: 70px;
+        line-height: 65px;
+        border-radius: 8px;
+        display: inline-block;
+        max-width: 500px;
+        text-align: center;
+        padding-left: 90px;
+        padding-right: 32px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 32px;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+            background-image: url(../img/icons/consultant.svg)
+        }
+    }
+
+    &__calc {
+        padding: 55px 50px 40px;
+        box-shadow: 0px 10px 42px $offersShadow;
+        border-radius: 7px;
+        background-color: $white;
+    }
+
+    &__calc__item {
+        margin-bottom: 80px;
+
+        &:last-of-type {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__calc__item__title {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__calc__item__title__name {
+        @extend %font22;
+        color: $baseColor;
+        font-weight: 700;
+        line-height: 145%;
+    }
+
+    &__calc__item__range {
+        &.range-price {
+            .slider-container {
+                .back-bar {
+                    .pointer-label {
+                        max-width: 150px;
+                        padding: 5px 33px 5px 17px;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 17px;
+                            width: 14px;
+                            height: 15px;
+                            background-image: url(../img/icons/rub.svg);
+                            margin: auto;
+                        }
+                   
+                    }
+                }
+
+                .scale {
+                    top: 10px;
+                    span {
+                        border: none;
+        
+                        &:first-of-type {
+                            ins {
+                                margin-left: 0!important;
+                            }                            
+                        }
+
+                        &:last-of-type {
+                            ins {
+                                margin-left: -80px!important;
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+
+        &.range-year {
+            .slider-container {
+                .back-bar {
+                    .pointer-label {
+                        max-width: 100px;
+                    }
+                }
+
+                .scale {
+                    top: 10px;
+                    span {
+                        border: none;
+        
+                        &:first-of-type {
+                            ins {
+                                margin-left: 0!important;
+                            }                            
+                        }
+
+                        &:last-of-type {
+                            ins {
+                                margin-left: -57px!important;
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .slider-container {
+        .back-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(140, 159, 177, 0.3);
+            border-radius: 3px;
+
+            .pointer {
+                width: 34px;
+                height: 34px;
+                border-radius: 50px;
+                cursor: pointer;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                border: none;
+                background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%);
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 20px;
+                    background-color: $white;
+                    margin: auto;
+                }
+            }
+
+            .pointer-label {
+                top: -67px;
+                right: 0;
+                padding: 5px 20px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+                line-height: 135%;
+                color: $baseColor;
+                font-family: $mazzard;
+                border: 1px solid $faqBorder;
+                background-color: $white;
+                box-shadow: 2px 3px 20px rgba(207, 221, 234, 0.4);
+                border-radius: 3px;
+            }
+        }
+
+        .selected-bar {
+            background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%);
+            height: 6px;
+            border-radius: 3px;
+        }
+
+        .scale {
+            top: 10px;
+            span {
+                border: none;
+            }
+            ins {
+                font-family: $mazzard;
+                font-size: 18px;
+                color: $darkGray;
+                line-height: 135%;
+                white-space: nowrap;
+            }
+        }
+    }    
+
+    &__calc__submit {
+        @extend %font20;
+        display: block;
+        background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%);
+        border-radius: 8px;
+        width: 300px;
+        height: 70px;
+        margin: 0 auto;
+        font-weight: 700;
+        color: $white;
+        border: none;
+        font-family: $mazzard;
+    }
+}
+
+.ipoteka__select {
+    position: relative;
+    width: 100%;
+    display: block;
+    border: 1px solid $faqBorder;
+    border-radius: 5px;
+    width: 100%;
+
+    &__current {
+        font-size: 20px;
+        line-height: 145%;
+        color: $baseColor;
+        padding: 12px 15px 8px;
+        position: relative;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/icons/filter-arrow.svg);
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 15px;
+            height: 8px;
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        position: absolute;
+        background-color: $white;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        font-size: 18px;
+        line-height: 150%;
+        color: $baseColor;
+        border: 1px solid $faqBorder;
+        z-index: 2;
+    }
+
+    &__dropdown__item {
+        position: relative;
+        padding: 12px 10px 10px 40px;
+        cursor: pointer;
+        
+        &:before {
+            position: absolute;
+                left: 10px;
+                top: 18px;
+                content: '';
+                width: 20px;
+                height: 15px;
+                background-image: url(../img/icons/check.svg);
+                background-size: cover;
+                transition: 0.2s;
+                opacity: 0;
+        }
+
+        &.active,
+        &:hover {
+            
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ipoteka-section {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__consultant {
+            font-size: 18px;
+        }
+
+        &__calc__item__title__name {
+            font-size: 16px;
+        }
+
+        &__calc__item__range {
+            &.range-price {
+                .slider-container {                  
+                    .back-bar {
+                        .pointer-label {
+                            max-width: 90px;
+                            padding: 5px 25px 5px 10px;
+
+                            &:after {
+                                content: '';
+                                right: 10px;
+                                width: 10px;
+                                height: 10px;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    .scale {
+                        
+                        span {    
+                            &:last-of-type {
+                                ins {
+                                    margin-left: -54px!important;
+                                }                            
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &.range-year {
+                .slider-container {
+                    .back-bar {
+                        .pointer-label {
+                            max-width: 60px;
+                        }
+                    }
+                    .scale {
+                        
+                        span {
+    
+                            &:last-of-type {
+                                ins {
+                                    margin-left: -38px!important;
+                                }                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider-container {  
+            .back-bar {
+                .pointer {
+                    width: 24px;
+                    height: 24px;
+
+                    &:after {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+
+                .pointer-label {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                    top: -58px;
+                }
+            }
+            .scale {
+    
+                ins {
+                    font-family: $mazzard;
+                    font-size: 12px;
+                    color: $darkGray;
+                    line-height: 135%;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        &__calc__submit {
+            font-size: 14px;
+            height: 50px;
+        }
+    }
+
+    .ipoteka__select {
+        &__current {
+            font-size: 14px;
+        }
+
+        &__dropdown__item {
+            font-size: 12px;
+            padding: 5px 10px 4px 40px;
+
+            &:before {
+                top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ipoteka-section {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        &__wrap {
+            display: block;
+        }
+    
+        &__col {
+            width: 100%;
+
+            &:first-of-type {
+                padding: 0;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__advantages__item {
+            margin-bottom: 25px;
+            font-size: 16px;
+
+            &:before {
+                top: 0;
+            }
+        }
+
+        &__consultant {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ipoteka-section {
+        padding: 80px 0;
+
+        &__title {
+            margin-bottom: 10px;
+        }
+        
+        &__subtitle {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        &__advantages__item {
+            margin-bottom: 20px;
+            font-size: 14px;
+
+            &:hover {
+                padding-left: 22px;
+            }
+    
+            &:before {
+                width: 16px;
+                height: 12px;
+                background-size: cover;
+                top: 2px;
+            }
+        }
+
+        &__calc__item__title {
+            margin-bottom: 12px;
+        }
+
+        &__calc__item__title__name {
+            font-size: 14px;
+        }
+
+        &__calc__item {
+            margin-bottom: 40px;
+        }
+
+        &__calc__item__range {
+            &.range-price {
+                .slider-container {                  
+                    .back-bar {
+                        .pointer-label {
+                            max-width: 90px;
+                            padding: 5px 25px 2px 10px;
+
+                            &:after {
+                                content: '';
+                                right: 10px;
+                                width: 8px;
+                                height: 8px;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    .scale {
+                        top: 5px;
+                        span {    
+                            &:last-of-type {
+                                ins {
+                                    margin-left: -45px!important;
+                                }                            
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &.range-year {
+                .slider-container {
+                    .back-bar {
+                        .pointer-label {
+                            max-width: 60px;
+                        }
+                    }
+                    .scale {
+                        top: 5px;
+                        span {
+    
+                            &:last-of-type {
+                                ins {
+                                    margin-left: -32px!important;
+                                }                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider-container {  
+            .back-bar {
+                .pointer {
+                    width: 18px;
+                    height: 18px;
+
+                    &:after {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+
+                .pointer-label {
+                    font-size: 10px;
+                    padding: 5px 10px 2px;
+                    top: -33px;
+                }
+            }
+            .scale {
+                top: 5px;
+                ins {
+                    font-family: $mazzard;
+                    font-size: 10px;
+                    color: $darkGray;
+                    line-height: 135%;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        &__calc__submit {
+            font-size: 12px;
+            height: 40px;
+        }
+    }
+
+    .ipoteka__select {
+        &__current {
+            font-size: 12px;
+        }
+
+        &__dropdown__item {
+            font-size: 10px;
+            padding: 5px 10px 4px 40px;
+
+            &:before {
+                top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ipoteka-section {
+        padding: 40px 0;
+        
+        &__subtitle {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        &__advantages__item {
+            margin-bottom: 12px;
+            font-size: 12px;
+
+            &:before {
+                top: 1px;
+            }
+        }
+    }
+}

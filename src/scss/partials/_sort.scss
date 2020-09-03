@@ -1,0 +1,37 @@
+.sort {
+
+    &.sort_new {
+        margin-bottom: 40px;
+    }
+    &__form__text {
+        @extend %font22;
+        line-height: 150%;
+        margin-right: 23px;
+    }
+
+    &__form__item {
+        position: relative;
+        cursor: pointer;
+        margin-right: 46px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__form__item__input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked + .sort__form__item__text {
+            color: theme('colors.blue');
+        }
+    }
+
+    &__form__item__text {
+        @extend %font20;
+        color: theme('colors.lightBlue');
+        transition: 0.3s;
+    }
+}

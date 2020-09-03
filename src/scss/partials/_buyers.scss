@@ -1,0 +1,194 @@
+.buyers {
+    padding: 110px 0;
+
+    &__title {
+        font-weight: 700;
+        color: $baseColor;
+    }
+
+    &__slider__item {
+        box-shadow: 0px 10px 42px $offersShadow;
+        border-radius: 7px;
+        overflow: hidden;
+        transition: 0.3s;
+        position: relative;
+        opacity: 0;        
+    }
+
+    &__slider__item__image {
+        max-height: 212px;
+        overflow: hidden;
+        img {
+            display: block;
+        }
+    }
+
+    &__slider__item__info {
+        background-color: $white;
+        padding: 45px 5px 40px;
+    }
+
+    &__slider__item__info__name {
+        font-weight: 700;
+        color: $baseColor;
+        @extend %font18;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__slider__item__info__link {
+        @extend %font15;
+        background-color: $white;
+        color: $blue;
+        font-weight: 700;
+        border: 1px solid $blue;
+        padding: 9px 24px;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        max-width: 173px;
+        text-align: center;
+        outline: none;
+    }
+
+    .slick-list {
+        padding: 131px 0 41px!important;
+        overflow: visible;
+    }
+
+    .slick-slide {
+        outline: none;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        .buyers__slider__item {
+            &.scale {
+            
+            transform: scale(1.13);
+            transition: 0.3s;
+            z-index: 2;
+            }
+
+            &.visible {
+                opacity: 1;
+            }
+        }
+    }
+
+    .slick-center {
+        z-index: 3;
+
+        & + .slick-slide {
+            z-index: 2;
+        }
+        .buyers__slider__item {
+            transform: scale(1.26);
+            box-shadow: 0px 24px 58px rgba(247, 113, 26, 0.78);
+            transition: 0.3s;
+            z-index: 3;
+        }
+
+        .buyers__slider__item__info {
+            background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%);
+
+        }
+
+        .buyers__slider__item__info__name {
+            color: $white;
+        }
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .buyers {
+        &__slider__item__info__name {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .buyers {
+        &__slider__item__info__name {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .buyers {
+        &__slider__item__image {
+            max-height: 156px;
+        }
+
+        &__slider__item__info__name {
+            font-size: 14px;
+        }
+
+        .slick-list {
+            padding: 80px 0 35px !important;
+        }
+
+        .slick-center {  
+        
+            .buyers__slider__item {
+                box-shadow: 0px 7px 20px rgba(247, 113, 26, 0.6);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .buyers {
+        padding: 80px 0;
+        .slick-list {
+            padding: 70px 150px 31px !important;
+        }
+
+        &__slider__item__image {
+            max-height: 180px;
+        }
+
+        &__slider__item__info {
+            padding: 28px 5px 26px;
+        }
+
+        &__slider__item__info__name {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        &__slider__item__info__link {            
+            max-width: 112px;    
+            font-size: 10px;  
+            padding: 5px 15px;      
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .buyers {
+        padding: 40px 0;
+        .slick-list {
+            padding: 60px 100px 31px !important;
+        }
+
+        &__slider__item__image {
+            max-height: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .buyers {
+        .slick-list {
+            padding: 60px 40px 31px !important;
+        }
+
+        &__slider__item__image {
+            max-height: 156px;
+        }
+    }
+}

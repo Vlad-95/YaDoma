@@ -1,0 +1,231 @@
+.header {
+    padding-top: 30px;
+
+    &__wrap {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__menu {
+        margin-left: auto;
+    }
+
+    &__menu__list {
+        line-height: 1;        
+        color: $lightBlue;
+        display: flex;
+    }
+
+    &__menu__item {
+        margin-right: 46px;
+    }
+
+    &__phone {
+        transform: translateY(22px);
+        @extend %font26;
+
+        a {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        span {
+            margin-left: 9px;
+            font-weight: 700;
+            color: $baseColor;
+        }
+    }
+
+    &__phone__text {
+        text-align: right;
+        color: $lightBlue;
+        @extend %font15;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .header {
+        &__logo {
+            max-width: 180px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__menu__list {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        &__phone {
+            transform: translateY(12px);
+            font-size: 20px;
+        }
+
+        &__phone__text {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__logo {
+            overflow: hidden;
+            max-width: 43px;
+            min-width: 43px;
+            img {
+                min-width: 180px;
+            }
+        }
+
+        &__menu__list {
+            font-size: 16px;
+        }
+
+        &__phone {
+            font-size: 18px;
+        }
+
+        &__phone__text {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 24px;
+        position: relative;
+
+        &__wrap {
+            justify-content: space-between;
+        }
+
+        &__logo {
+            overflow: hidden;
+            max-width: 180px;
+            min-width: 106px;
+            img {
+                max-width: 100%;
+                min-width: auto;
+            }
+        }
+
+        &__menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;            
+            box-shadow: 0px 4px 21px rgba(207, 221, 234, 0.5);
+        }
+
+        &__menu__list {
+            justify-content: center;
+        }
+
+        &__menu__item {
+            &:last-of-type {
+                padding-right: 10px;
+            }
+
+            &:first-of-type {
+                padding-left: 10px;
+            }
+
+            a {
+                padding: 7px 0;
+                display: inline-block;
+            }
+        }
+
+        &__phone {
+            transform: translateY(10px);
+
+            span {
+                font-weight: 400;
+                color: $blue;
+                margin-left: 7px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+
+        &__logo {
+            max-width: 140px;
+            min-width: 106px;
+        }
+
+        &__menu__item {
+            margin-right: 19px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        &__phone {
+            font-size: 14px;
+            line-height: 18px;
+            svg {
+                width: 12px;
+                height: 12px;
+            }
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        &__phone__text {
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        &__logo {
+            max-width: 106px;
+        }
+
+        &__menu__list {
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        &__menu__item {
+            a {
+                padding: 9px 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header {
+        &__menu {
+            height: 30px;
+        }
+
+        &__menu__list {
+            
+            overflow: auto;
+            justify-content: flex-start;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                width: 0px;  
+            }
+
+            
+        }
+    }
+}

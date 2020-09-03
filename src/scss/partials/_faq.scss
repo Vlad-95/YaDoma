@@ -1,0 +1,177 @@
+.faq {
+    padding: 110px 0 100px;
+
+    &__title {
+        margin-bottom: 60px;
+        font-weight: 700;
+        color: $baseColor;
+    }
+
+    &__item {
+        padding: 30px 0;
+        border-top: 2px solid $faqBorder;
+
+        &:last-of-type {
+            border-bottom: 2px solid $faqBorder;
+        }
+    }
+
+    &__item__question {
+        @extend %font22;
+        line-height: 150%;
+        cursor: pointer;
+        position: relative;
+        font-weight: 700;
+        color: $baseColor;
+        padding-right: 60px;
+    }
+
+    &__item__question__icon {
+        position: absolute;
+        right: 0;
+        top: -4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        box-shadow: 0px 5px 17px rgba(29, 145, 255, 0.5);
+        background-color: $blue;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 2px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: $white;
+            transition: 0.3s;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 2px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: $white;
+            transform: rotate(90deg);
+            transition: 0.3s;
+        }
+
+        &.active {
+            background-color: $white;
+            box-shadow: 0px 5px 17px rgba(217, 235, 252, 0.5);
+            transition: 0.3s;
+
+            &:before {
+                
+                background-color: $lightBlue;
+                transition: 0.3s;
+            }
+    
+            &:after {
+                
+                background-color: $lightBlue;
+                transform: rotate(0);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__item__answer {
+        color: $baseColor;
+        @extend %font20;
+        line-height: 150%;
+        padding: 20px 130px 0 0;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .faq {
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__item__question {
+            font-size: 20px;
+        }
+
+        &__item__question__icon {
+            top: -5px;
+        }
+
+        &__item__answer {
+            font-size: 18px;
+        }
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .faq {
+        padding: 80px 0;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__item {
+            padding: 15px 0;
+        }
+
+        &__item__question {
+            font-size: 16px;
+            padding-right: 45px;
+        }
+
+        &__item__question__icon {
+            top: -3px;
+            width: 30px;
+            height: 30px;
+    
+            &:before {
+                width: 12px;                
+            }
+    
+            &:after {
+                width: 12px;
+            }
+        }
+
+        &__item__answer {
+            font-size: 14px;
+        }
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    .faq {
+        padding: 50px 0 40px;
+        
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__item__question {
+            font-size: 14px;
+        }
+
+        &__item__question__icon {
+            top: -4px;
+        }
+
+        &__item__answer {
+            font-size: 12px;
+        }
+       
+    }    
+}
