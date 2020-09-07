@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body class="font-body">
+<body>
     <header class="header">
         <div class="container">
             <div class="header__wrap">
@@ -40,13 +40,193 @@
         </div>
     </header>
     
-    <section class="section offers offers_new bg-white">
-        <div class="container mx-auto">
-            <h2 class="section__title offers__title font-bold text-baseColor">Каталог новостроек</h2>
-            
+    <section class="section offers offers_new">
+        <div class="container">
+            <form action="" class="filter filter_new">
+                <div class="filter__row">
+                    <div class="filter__item filter__item_rooms">
+                        <label class="filter__checkbox">
+                            <input type="checkbox" name="rooms-qount" id="">
+                            <div class="filter__checkbox__text">Студия</div>
+                        </label>
+                        <label class="filter__checkbox">
+                            <input type="checkbox" name="rooms-qount" id="">
+                            <div class="filter__checkbox__text">1</div>
+                        </label>
+                        <label class="filter__checkbox">
+                            <input type="checkbox" name="rooms-qount" id="">
+                            <div class="filter__checkbox__text">2</div>
+                        </label>
+                        <label class="filter__checkbox">
+                            <input type="checkbox" name="rooms-qount" id="">
+                            <div class="filter__checkbox__text">3</div>
+                        </label>
+                        <label class="filter__checkbox">
+                            <input type="checkbox" name="rooms-qount" id="">
+                            <div class="filter__checkbox__text">4+</div>
+                        </label>
+                    </div>
+
+                    <div class="filter__item filter__item_time">
+                        <label class="filter__select">
+                            <input type="hidden" value="" name="time" id="time" class="filter__select__input">
+                            <div class="filter__select__current">Срок сдачи</div>
+                            <div class="filter__select__dropdown">
+                                <div class="filter__select__dropdown__item" data-value="До 3 кв. 2020 года">До 3 кв. 2020 года</div>
+                                <div class="filter__select__dropdown__item" data-value="До 4 кв. 2020 года">До 4 кв. 2020 года</div>
+                                <div class="filter__select__dropdown__item" data-value="До 3 кв. 2020 года">До 3 кв. 2020 года</div>
+                                <div class="filter__select__dropdown__item" data-value="До 4 кв. 2020 года">До 4 кв. 2020 года</div>
+                                <div class="filter__select__dropdown__item" data-value="До 3 кв. 2020 года">До 3 кв. 2020 года</div>
+                                <div class="filter__select__dropdown__item" data-value="До 4 кв. 2020 года">До 4 кв. 2020 года</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="filter__item filter__item_price-range">
+                        <label class="filter__input filter__input_price-from">
+                            <input type="text" name="" id="">
+                        </label>
+                        <label class="filter__input filter__input_price-to">
+                            <input type="text" name="" id="">
+                        </label>
+                    </div>
+
+                    <div class="filter__item filter__item_square">
+                        <label class="filter__input">
+                            <input type="text" name="" id="">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter__row">
+                    <div class="filter__item filter__item_repair">
+                        <label class="filter__select">
+                            <input type="hidden" value="" name="repair" id="repair" class="filter__selelct__input">
+                            <div class="filter__select__current">Отделка</div>
+                            <div class="filter__select__dropdown">
+                                <div class="filter__select__dropdown__item" data-value="Черновая">Черновая</div>
+                                <div class="filter__select__dropdown__item" data-value="Чистовая">Чистовая</div>
+                                <div class="filter__select__dropdown__item" data-value="Под ключ">Под ключ</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="filter__item filter__item_house-grade">
+                        <label class="filter__select">
+                            <input type="hidden" value="" name="house-grade" id="house-grade" class="filter__selelct__input">
+                            <div class="filter__select__current">Класс жилья</div>
+                            <div class="filter__select__dropdown">
+                                <div class="filter__select__dropdown__item" data-value="Эконом">Эконом</div>
+                                <div class="filter__select__dropdown__item" data-value="Комфорт">Комфорт</div>
+                                <div class="filter__select__dropdown__item" data-value="Комфорт +">Комфорт +</div>
+                                <div class="filter__select__dropdown__item" data-value="Бизнес">Бизнес</div>
+                                <div class="filter__select__dropdown__item" data-value="Элитный">Элитный</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="filter__item filter__item_address">
+                        <label class="filter__input">
+                            <input type="text" name="" id="" placeholder="Метро, адрес или ЖК">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter__row filter__row_hidden">
+                    <div class="filter__item filter__item_square-range">
+                        <p class="filter__item__text">Площадь</p>
+                        <div class="filter__item__content filter__item__content_square-range">
+                            <label class="filter__input filter__input_square-from">
+                                <input type="text" name="" id="">
+                            </label>
+                            <label class="filter__input filter__input_square-to">
+                                <input type="text" name="" id="">
+                            </label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="filter__item filter__item_flat">
+                        <p class="filter__item__text">Этаж</p>
+                        <div class="filter__item__content filter__item__content_flat">
+                            <label class="filter__input filter__input_flat-from">
+                                <input type="text" name="" id="">
+                            </label>
+                            <label class="filter__input filter__input_flat-to">
+                                <input type="text" name="" id="">
+                            </label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="filter__item filter__item_apartments">
+                        <p class="filter__item__text">Апартаменты</p>
+                        <div class="filter__item__content filter__item__content_apartments">
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="apartments" id="">
+                                <div class="filter__checkbox__text">Без апартаментов</div>
+                            </label>
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="apartments" id="">
+                                <div class="filter__checkbox__text">Только апартаменты</div>
+                            </label>
+                        </div>
+                        
+                    </div>
+                    <div class="filter__item filter__item_transport">
+                        <p class="filter__item__text">Время до метро</p>
+                        <div class="filter__item__content filter__item__content_transport">
+                            <div class="filter__radio-block">
+                                <label class="filter__radio">
+                                    <input type="radio" name="transport" id="" checked>
+                                    <div class="filter__radio__text">Пешком</div>
+                                </label>
+                                <label class="filter__radio">
+                                    <input type="radio" name="transport" id="">
+                                    <div class="filter__radio__text">На транспорте</div>
+                                </label>
+                            </div>
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="transport" id="">
+                                <div class="filter__checkbox__text">5 мин</div>
+                            </label>
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="transport" id="">
+                                <div class="filter__checkbox__text">10 мин</div>
+                            </label>
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="transport" id="">
+                                <div class="filter__checkbox__text">15 мин</div>
+                            </label>
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="transport" id="">
+                                <div class="filter__checkbox__text">20 мин</div>
+                            </label>
+                            <label class="filter__checkbox filter__checkbox_rounded">
+                                <input type="checkbox" name="transport" id="">
+                                <div class="filter__checkbox__text">30 мин</div>
+                            </label>                                
+                        </div>                            
+                    </div>
+                </div>
+                <div class="filter__row filter__row_bottom">
+                    <div class="filter__toggle">
+                        <div class="filter__toggle__item js-filter-toggle">Еще фильтры</div>
+                        <button type="reset" class="filter__reset">Сбросить <span class="filter__reset-qount">1</span></button>
+                    </div>
+
+                    <div class="filter__btns">
+                        <a href="map.html" class="filter__btns__item filter__btns__item_map">Смотреть на карте</a>
+                        <button type="submit" class="filter__btns__item filter__btns__item_submit">Применить фильтр</button>
+                    </div>
+                </div>
+            </form>
+
+            <h2 class="section__title offers__title">Каталог новостроек</h2>
+
             <div class="sort sort_new">
-                <form action="" class="sort__form flex">
-                    <p class="sort__form__text text-baseColor font-bold">Сортировать:</p>
+                <form action="" class="sort__form">
+                    <p class="sort__form__text">Сортировать:</p>
                     <label class="sort__form__item">
                         <input type="radio" name="sort" id="" class="sort__form__item__input" checked>
                         <div class="sort__form__item__text">по актуальности</div>
@@ -66,43 +246,43 @@
                 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
-                            Чистое небо
+                        <h3 class="offers__item__info__name">
+                            Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Коменданский пр.</p>
-                            <p class="offers__item__info__time offers__item__info__time_transport relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -111,43 +291,43 @@
 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
-                            ArtLine в Приморском
+                        <h3 class="offers__item__info__name">
+                            Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Старая Деревня</p>
-                            <p class="offers__item__info__time offers__item__info__time_walk relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -156,43 +336,43 @@
                 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
+                        <h3 class="offers__item__info__name">
                             Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Обводный канал</p>
-                            <p class="offers__item__info__time offers__item__info__time_walk relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -201,43 +381,43 @@
 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-green text-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-white text-baseColor">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
-                            Main House
+                        <h3 class="offers__item__info__name">
+                            Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Гражданский пр.</p>
-                            <p class="offers__item__info__time offers__item__info__time_walk relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -246,43 +426,43 @@
 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
-                            Чистое небо
+                        <h3 class="offers__item__info__name">
+                            Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Коменданский пр.</p>
-                            <p class="offers__item__info__time offers__item__info__time_transport relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -291,43 +471,43 @@
 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
-                            ArtLine в Приморском
+                        <h3 class="offers__item__info__name">
+                            Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Старая Деревня</p>
-                            <p class="offers__item__info__time offers__item__info__time_walk relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -336,43 +516,43 @@
                 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
+                        <h3 class="offers__item__info__name">
                             Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Обводный канал</p>
-                            <p class="offers__item__info__time offers__item__info__time_walk relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -381,43 +561,43 @@
 
                 <!--  -->
                 <div class="offers__item">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offer1.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-green text-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-white text-baseColor">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
                         <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
-                            Main House
+                        <h3 class="offers__item__info__name">
+                            Первый квартал
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Гражданский пр.</p>
-                            <p class="offers__item__info__time offers__item__info__time_walk relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Обводный канал</p>
+                            <p class="offers__item__info__time offers__item__info__time_walk">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -426,45 +606,43 @@
 
                 <!-- ВО ВСЮ ШИРИНУ -->
                 <div class="offers__item offers__item_big">
-                    <div class="offers__item__img relative">
+                    <div class="offers__item__img">
                         <img src="img/offers-big.jpg" alt="">
-                        <div class="offers__item__tags flex absolute font-medium">
-                            <div class="offers__item__tags__item bg-white">строится</div>
-                            <div class="offers__item__tags__item bg-white">комфорт+</div>
-                            <div class="offers__item__tags__item bg-blue text-white">покупка из дома</div>
+                        <div class="offers__item__tags">
+                            <div class="offers__item__tags__item offers__item__tags__item_white">строится</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_white">комфорт+</div>
+                            <div class="offers__item__tags__item offers__item__tags__item_blue">покупка из дома</div>
                         </div>
-                        <div class="offers__item__favourite absolute">
-                            <svg class="absolute" width="20" height="20">
+                        <div class="offers__item__favourite">
+                            <svg width="20" height="20">
                                 <use xlink:href="img/icons/sprite.svg#offers-favourite"></use>
                             </svg>
                         </div>
-
-                        <h3 class="offers__item__title absolute text-white font-bold">Чистое небо</h3>
                     </div>
-                    <div class="offers__item__info bg-white">
-                        <div class="offers__item__info__icons flex items-center">
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale bg-red text-white font-medium">скидка при 100% оплате</div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key bg-blue">
+                    <div class="offers__item__info">
+                        <div class="offers__item__info__icons">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_sale">скидка при 100% оплате</div>
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_key">
                                 <img src="img/icons/key.svg" alt="">
                             </div>
-                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics bg-green">
+                            <div class="offers__item__info__icons__item offers__item__info__icons__item_analytics">
                                 <img src="img/icons/analytics.svg" alt="">
                             </div>
                         </div>
-                        <h3 class="offers__item__info__name font-bold text-baseColor">
+                        <h3 class="offers__item__info__name">
                             Чистое небо
                         </h3>
-                        <div class="offers__item__info__address flex justify-between">
-                            <p class="offers__item__info__address__text relative text-baseColor">Коменданский пр.</p>
-                            <p class="offers__item__info__time offers__item__info__time_transport relative text-darkGray">21 мин.</p>
+                        <div class="offers__item__info__address">
+                            <p class="offers__item__info__address__text">Коменданский пр.</p>
+                            <p class="offers__item__info__time offers__item__info__time_transport">21 мин.</p>
                         </div>
-                        <div class="offers__item__info__price flex justify-between">
-                            <p class="offers__item__info__price__square relative text-baseColor">от 24,1 м<span>2</span></p>
-                            <p class="offers__item__info__price__text relative text-baseColor">от 2 850 000 ₽</p>
+                        <div class="offers__item__info__price">
+                            <p class="offers__item__info__price__square">от 24,1 м<span>2</span></p>
+                            <p class="offers__item__info__price__text">от 2 850 000 ₽</p>
                         </div>
-                        <a href="javascript:;" class="offers__item__info__link relative font-bold text-darkGray">
+                        <a href="javascript:;" class="offers__item__info__link">
                             Подробнее
-                            <svg class="absolute" width="8" height="15">
+                            <svg width="8" height="15">
                                 <use xlink:href="img/icons/sprite.svg#offers-link"></use>
                             </svg>
                         </a>
@@ -548,6 +726,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/libs.js"></script>
     <script src="js/offers.js"></script>
+    <script src="js/filter.js"></script>
     
 </body>
 </html>

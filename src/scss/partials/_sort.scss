@@ -1,12 +1,20 @@
 .sort {
 
-    &.sort_new {
+    &_new {
         margin-bottom: 40px;
     }
+
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+
     &__form__text {
         @extend %font22;
         line-height: 150%;
         margin-right: 23px;
+        color: $baseColor;
+        font-weight: 700;
     }
 
     &__form__item {
@@ -25,13 +33,57 @@
         opacity: 0;
 
         &:checked + .sort__form__item__text {
-            color: theme('colors.blue');
+            color: $blue;
         }
     }
 
     &__form__item__text {
         @extend %font20;
-        color: theme('colors.lightBlue');
+        color: $lightBlue;
         transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sort {
+        &__form {
+            flex-wrap: wrap;
+        }
+
+        &__form__text {
+            font-size: 18px;
+        }
+
+        &__form__item {
+            margin-right: 30px;
+        }
+
+        &__form__item__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sort {
+        &__form__text {
+            font-size: 14px;
+        }
+
+        &__form__item {
+            margin-right: 15px;
+        }
+
+        &__form__item__text {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sort {
+        &__form__text {
+            width: 100%;
+        }
     }
 }

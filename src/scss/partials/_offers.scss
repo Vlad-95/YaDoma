@@ -2,6 +2,70 @@
     padding: 210px 0 80px;
     background-color: $bgGray;
 
+    &_new {
+        background-color: $white;
+        padding: 80px 0;
+
+        .offers__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .offers__item {
+            width: calc((100% / 4) - 30px);
+            margin: 0 15px 50px;
+            
+
+
+            // большой элемент
+            &_big {
+                display: flex;
+                width: 100%;
+        
+                .offers__item__img {
+                    width: 100%;
+                    max-width: 1010px;
+                    height: auto;
+                    max-height: 600px;
+                }
+        
+                .offers__item__title {
+                    @extend %section-title;
+                    left: 15px;
+                    bottom: 45px;
+                }
+        
+                .offers__item__info {
+                    width: 100%;
+                    max-width: 550px;
+                    padding: 30px 40px 30px 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+                }
+        
+                .offers__item__info__icons {
+                    position: absolute;
+                    left: 50px;
+                    top: 30px;
+                }
+        
+                .offers__item__info__address,
+                .offers__item__info__price {
+                    max-width: 320px;
+                }
+        
+                .offers__item__info__link {
+                    position: absolute;
+                    bottom: 30px;
+                    right: 40px;
+                }
+            }
+        }
+    }
+
     &__title {
         margin-bottom: 60px;
         color: $baseColor;
@@ -289,52 +353,6 @@
         }
     }
 
-    //болшьой элемент
-    &__item_big {
-        display: flex;
-        width: 100%;
-
-        .offers__item__img {
-            width: 100%;
-            max-width: 1010px;
-            height: auto;
-            max-height: 600px;
-        }
-
-        .offers__item__title {
-            @extend %section-title;
-            left: 15px;
-            bottom: 45px;
-        }
-
-        .offers__item__info {
-            width: 100%;
-            max-width: 550px;
-            padding: 30px 40px 30px 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-        }
-
-        .offers__item__info__icons {
-            position: absolute;
-            left: 50px;
-            top: 30px;
-        }
-
-        .offers__item__info__address,
-        .offers__item__info__price {
-            max-width: 320px;
-        }
-
-        .offers__item__info__link {
-            position: absolute;
-            bottom: 30px;
-            right: 40px;
-        }
-    }
-
     &__btn {
         @extend %font22;
         display: block;
@@ -350,19 +368,21 @@
         box-sizing: border-box;
         border-radius: 7px;
     }
-
-    //=========СТРАНИЦА НОВОСТРОЕК
-    &_new {
-        .offers__item {
-            margin-bottom: 50px;
-
-            
-        }
-    }
 }
 
 @media screen and (max-width: 1560px) {
     .offers {
+        &_new {
+            .offers__item {
+                width: calc((100% / 3) - 30px);
+
+                // большой элемент
+                &_big {                    
+                    width: 100%;
+                }
+            }
+        }
+
         .slick-slide {
             opacity: 0;
             transition: 0.3s;
@@ -443,6 +463,31 @@
 
 @media screen and (max-width: 992px) {
     .offers {
+        &_new {
+            .offers__item {
+                width: calc(50% - 30px);
+
+                // большой элемент
+                &_big {                    
+                    width: 100%;
+
+                    .offers__item__info {
+                        padding: 20px 25px 20px 30px;
+                    }
+
+                    .offers__item__info__icons {
+                        left: 30px;
+                        top: 20px;
+                    }
+
+                    .offers__item__info__link {
+                        bottom: 20px;
+                        right: 25px;
+                    }
+                }
+            }
+        }
+
         &__title {
             margin-bottom: 40px;
         }
@@ -456,6 +501,39 @@
 @media screen and (max-width: 768px) {
     .offers {
         padding: 160px 0 40px;
+
+        &_new {
+            padding: 60px 0;
+            
+            .offers__item {
+                // большой элемент
+                &_big {                    
+                    width: 100%;
+                    display: block;
+
+                    .offers__item__info {
+                        padding: 10px;
+                    }
+
+                    .offers__item__info__icons {
+                        position: static;
+                    }
+
+                    .offers__item__info__address,
+                    .offers__item__info__price {
+                        max-width: 100%;
+                    }
+
+                    .offers__item__info__link {
+                        position: relative;
+                        bottom: auto;
+                        right: auto;
+                    }
+                }
+            }
+            
+        }
+
         &__title {
             margin-bottom: 30px;
         }
@@ -474,6 +552,18 @@
 
 @media screen and (max-width: 576px) {
     .offers {
+
+        &_new {
+            .offers__item {
+                width: calc(100% - 30px);
+
+                &_big {
+                    .offers__item__img {
+                        height: 230px;
+                    }
+                }
+            }
+        }
         &__title {
             margin-bottom: 20px;
         }
@@ -490,6 +580,16 @@
 
 @media screen and (max-width: 420px) {
     .offers {
+        &_new {
+            .offers__item {
+                &_big {
+                    .offers__item__img {
+                        height: 180px;
+                    }
+                }
+            }
+        }
+
         &__item__img {
             height: 180px;
         }
