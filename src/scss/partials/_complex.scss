@@ -3,23 +3,28 @@
     .section {
         &_first {
             padding: 30px 0;
+            background-color: $bgGray;
         }
 
         &_second {
             padding: 100px 0 110px;
+            background-color: $white;
         }
 
         &_third {
             padding: 50px 0;
+            background-color: $blue;
         }
 
         &_fourth {
             padding: 100px 0 50px;
+            background-color: $bgGray;
         }
 
         &_fifth {
             overflow: hidden;
             padding: 100px 0;
+            background-color: $white;
         }
     }
 
@@ -29,50 +34,84 @@
 
         &_descr {
             margin-bottom: 20px;
+            color: $baseColor;
+            font-weight: 700;
         }
 
         &_place {
             margin-bottom: 50px;
+            color: $baseColor;
+            font-weight: 700;
         }
 
         &_advantages {
             margin-bottom: 30px;
+            color: $white;
+            font-weight: 700;
         }
 
         &_plan {
             margin-bottom: 40px;
+            color: $baseColor;
+            font-weight: 700;
+        }
+
+        &_build {
+            margin-bottom: 50px;
+            color: $baseColor;
+            font-weight: 700;
         }
 
         &_ipoteka {
             margin-bottom: 50px;
+            color: $baseColor;
+            font-weight: 700;
         }
 
         &_credit {
             margin-bottom: 50px;
+            color: $baseColor;
+            font-weight: 700;
         }
     }
 
     &__main {
         box-shadow: 0px 10px 27px rgba(207, 221, 234, 0.8);
         border-radius: 10px;
+        background-color: $white;
     }
     
     &__main__row {
         padding: 30px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__main__info__title {
         @extend %section-title;
+        font-weight: 700;
+        color: $baseColor;
         margin-bottom: 15px;
+    }
+
+    &__main__info__address {
+        display: flex;
     }
 
     &__main__info__address__item {
         @extend %font20;
+        display: flex;
+
+        a {
+            color: $blue;
+        }
     }
 
     &__main__info__address__item__metro {
         padding-left: 20px;
         margin-right: 20px;
+        position: relative;
+        color: $baseColor;
 
         &:before {
             position: absolute;
@@ -89,13 +128,15 @@
         &_green {
             &:before {
                 
-                background-color: theme('colors.metroGreen');
+                background-color: $metroGreen;
             }
         }
     }
 
     &__main__info__address__item__time {       
         margin-right: 20px;
+        position: relative;
+        color: $darkGray;
         &:before {
             position: absolute;
             content: '';
@@ -126,6 +167,7 @@
 
     &__main__info__address__item__street {
         margin-right: 20px;
+        color: $baseColor;
     }
 
     &__main__price {
@@ -134,29 +176,52 @@
 
     &__main__price__item {
         @extend %font18;
+        color: $baseColor;
 
         &_text {
             @extend %font20;
+            font-weight: 500;
         }
     }
 
     &__main__nav {
-        border-top: 1px solid theme('colors.faqBorder');
+        border-top: 1px solid $faqBorder;
         padding: 26px 30px 24px;
+        display: flex;
     }
 
     &__main__nav__item {
         @extend %font20;
-        color: theme('colors.lightBlue');
+        color: $lightBlue;
         margin-right: 30px;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 4px;
+            background-color: $blue;
+            bottom: -24px;
+            left: 0;
+        }
 
         &:last-of-type {
             margin-right: 0;
+        }
+
+        &_active {
+            color: $baseColor;
+            &:after {
+                width: 100%;
+            }
         }
     }
 
     &__picture {
         margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
     }
 
     &__picture__slider {
@@ -175,6 +240,7 @@
     }
 
     &__picture__info {
+        background-color: $white;
         width: 100%;
         max-width: 490px;
         max-height: 620px;
@@ -187,6 +253,12 @@
         @extend %font20;
         line-height: 150%;
         margin-bottom: 30px;
+        display: flex;
+        color: $baseColor;
+
+        .text-blue {
+            color: $blue;
+        }
 
         &:last-of-type {
             margin-bottom: 84px;
@@ -201,6 +273,9 @@
 
     &__picture__info__link {
         @extend %font20;
+        background-color: $blue;
+        color: $white;
+        font-weight: 700;
         padding: 15px;
         display: block;
         max-width: 230px;
@@ -217,14 +292,19 @@
     &__descr__text {
         @extend %font20;
         line-height: 150%;
+        color: $baseColor;
     }
 
     &__place {
         
     }
 
+    &__place__wrap {
+        display: flex;
+    }
+
     &__place__map {
-        background-color: theme('colors.blue');
+        background-color: $blue;
         width: 100%;
         max-width: 910px;
         min-width: 910px;
@@ -237,10 +317,12 @@
         @extend %font20;
         line-height: 150%;
         padding-left: 100px;
+        color: $baseColor;
     }
 
     &__advantages__item {
         @extend %font20;
+        color: $white;
         line-height: 150%;
         margin-bottom: 20px;
         position: relative;
@@ -324,7 +406,7 @@
             text-align: center;
         
             opacity: 1;
-            background-color: theme('colors.faqBorder');
+            background-color: $faqBorder;
         
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -332,34 +414,38 @@
 
         .slick-dots li.slick-active button:before {
             opacity: 1;
-            background-color: theme('colors.blue');
+            background-color: $blue;
         }
     }
 
     &__ipoteka__slider__item {
         box-shadow: 4px 9px 35px rgba(140, 159, 177, 0.3);
         border-radius: 10px;
-        padding: 70px 50px 30px;
+        padding: 70px 50px 30px!important;
         transition: 0.3s;
+        position: relative;
+        background-color: $white;
+        outline: none;
     
         &:hover {
             box-shadow: 0px 10px 35px rgba(29, 145, 255, 0.3);
 
             .complex__ipoteka__slider__item__label {
-                color: theme('colors.blue');
+                color: $blue;
                 use {
-                    fill: theme('colors.blue');
+                    fill: $blue;
                 }
             }
         }
     }
 
     &__ipoteka__slider__item__label {
+        position: absolute;
         @extend %font18;
         line-height: 150%;
         right: 20px;
         top: 17px;
-        color: theme('colors.lightBlue');
+        color: $lightBlue;
         padding-right: 40px;
         transition: 0.3s;
 
@@ -368,10 +454,11 @@
             right: 0;
             bottom: 0;
             margin: auto;
+            position: absolute;
         }
 
         use {
-            fill: theme('colors.lightBlue');
+            fill: $lightBlue;
             transition: 0.3s;
         }
     }
@@ -391,9 +478,16 @@
     &__ipoteka__slider__item__advantages {
         @extend %font20;
         line-height: 150%;
+        color: $baseColor;
+    }
+
+    &__credit__wrap {
+        display: flex;
     }
 
     &__credit__item {
+        color: $white;
+        background-color: $blue;
         width: 100%;
         max-width: 490px;
         margin-right: 30px;
@@ -404,6 +498,7 @@
 
     &__credit__item__name {
         @extend %section-title;
+        font-weight: 700;
         margin-bottom: 20px;
     }
 
