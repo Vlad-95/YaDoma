@@ -1,0 +1,218 @@
+.plan {
+    .section {
+        &_fisrt {
+
+        }
+
+        &_second {
+
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 130%;
+        color: $baseColor;
+        margin-bottom: 50px;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        font-size: 18px;
+        line-height: 1;
+        color: $baseColor;
+        background-color: $bgGray;
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 230px;
+        text-align: left;
+        padding: 16px 0;
+        border-radius: 7px;
+
+        &:not(:last-of-type) {
+            margin-right: 10px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        &_flat {
+            padding-left: 56px;
+            &:before {
+                left: 19px;
+                width: 22px;
+                height: 22px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/icons/plan-flat.svg);
+            }
+        }
+        &_compare {
+            padding-left: 74px;
+            &:before {
+                left: 35px;
+                width: 27px;
+                height: 27px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/icons/plan-compare.svg);
+            }
+        }
+        &_presentation {
+            padding-left: 57px;
+            &:before {
+                left: 24px;
+                width: 18px;
+                height: 18px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/icons/plan-presentation.svg);
+            }
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+
+    }
+
+    &__right {
+        
+    }
+
+    &__info {
+        background-color: $white;
+        width: 100%;
+        max-width: 490px;
+        box-shadow: 0px 10px 27px rgba(207, 221, 234, 0.8);
+        border-radius: 10px;
+        padding: 40px 30px;   
+
+        &_right {
+            .plan__info__item__name {
+                white-space: nowrap;
+            }
+            p {
+    
+                &:last-of-type {
+                    min-width: none;
+                    white-space: nowrap;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    &__info__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-of-type) {
+            margin-bottom: 34px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1;
+            color: $baseColor;
+
+            &:last-of-type {
+                min-width: 130px;
+                white-space: nowrap;
+            }
+        }
+
+        &__name {
+            color: $lightBlue!important;
+            padding-right: 35px;
+        }
+
+        &_full {
+            p {
+                font-size: 23px;
+                color: $baseColor!important;
+            }
+        }
+        
+    }
+
+    &__info__links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 62px;
+    }
+
+    &__info__link {
+        font-size: 21px;
+        line-height: 120%;
+        font-weight: 700;
+        color: $lightBlue;
+        border: 2px solid $lightBlue;
+        border-radius: 10px;
+        display: block;
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+
+        &_blue {
+            background-color: $blue;
+            border-color: $blue;
+            color: $white;
+            margin-right: 10px;
+        }
+    }
+
+    &__address {
+        font-size: 18px;
+        line-height: 150%;
+        color: $baseColor;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 8px;
+            left: 0;
+        }
+
+        &_green {
+            &:before {
+                background-color: $metroGreen;
+            }
+        }
+        
+    }
+
+    &__map {
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 620px;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}

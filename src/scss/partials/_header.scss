@@ -1,6 +1,14 @@
 .header {
     padding: 30px 0 20px;
 
+    &_complex {
+        padding: 30px 0 66px;
+    }
+
+    &_plan {
+        padding: 30px 0 66px;
+    }
+
     &__wrap {
         display: flex;
         align-items: flex-end;
@@ -116,6 +124,7 @@
 
         &__menu {
             position: absolute;
+            background-color: $white;
             top: 100%;
             left: 0;
             width: 100%;            

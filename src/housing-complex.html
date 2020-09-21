@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <header class="header">
+    <header class="header header_complex">
         <div class="container">
             <div class="header__wrap">
                 <a href="index.html" class="header__logo">
@@ -46,35 +46,39 @@
                 <!-- Заголовок -->
                 <div class="complex__main">
                     <div class="complex__main__row">
-                        <div class="complex__main__info">
-                            <h1 class="complex__main__info__title">Невские панорамы</h1>
-                            <div class="complex__main__info__address">
-                                <div class="complex__main__info__address__item">
-                                    <p class="complex__main__info__address__item__metro complex__main__info__address__item__metro_green">Пролетарская</p>
-                                    <p class="complex__main__info__address__item__time complex__main__info__address__item__time_transport">10 минут</p>
-                                </div>
-                                <div class="complex__main__info__address__item">
-                                    <p class="complex__main__info__address__item__street">Всеволожский р-н, гп имени Свердлова, Западный проезд,</p>
-                                    <a href="javascript:;">на карте</a>
-                                </div>
-                            </div>
-                        </div>
+                        <h1 class="complex__main__title">Невские панорамы</h1>
+                        
                         <div class="complex__main__price">
                             <p class="complex__main__price__item complex__main__price__item_text">от 1 384 730 ₽</p>
                             <p class="complex__main__price__item">Квартир в комплексе: 175</p>
                         </div>
+
+                        <div class="complex__main__address">
+                            <div class="complex__main__address__item">
+                                <p class="complex__main__address__item__metro complex__main__address__item__metro_green">Пролетарская</p>
+                                <p class="complex__main__address__item__time complex__main__address__item__time_transport">10 минут</p>
+                            </div>
+                            <div class="complex__main__address__item">
+                                <p class="complex__main__address__item__street">Всеволожский р-н, гп имени Свердлова, Западный проезд,</p>
+                                <a href="javascript:;">на карте</a>
+                            </div>
+                        </div>
+                        
                     </div>
 
                     <div class="complex__main__nav">
-                        <a href="javascript:;" class="complex__main__nav__item complex__main__nav__item_active">Описание</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Квартиры</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Карта</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Преимущества</a>
-                        <a href="javascript:;" class="complex__main__nav__item">План комплекса</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Аэропанорама</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Ход строительства</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Ипотека</a>
-                        <a href="javascript:;" class="complex__main__nav__item">Рассрочка</a>
+                        <div class="complex__main__nav__overflow">
+                            <a href="javascript:;" class="complex__main__nav__item complex__main__nav__item_active">Описание</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Квартиры</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Карта</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Преимущества</a>
+                            <a href="javascript:;" class="complex__main__nav__item">План комплекса</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Аэропанорама</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Ход строительства</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Ипотека</a>
+                            <a href="javascript:;" class="complex__main__nav__item">Рассрочка</a>
+                        </div>
+                        
                     </div>
                 </div>
                 <!--  -->
@@ -241,81 +245,91 @@
 
                     <div class="complex__ipoteka__wrap">
                         <div class="complex__ipoteka__slider">
-                            <div class="complex__ipoteka__slider__item">
-                                <div class="complex__ipoteka__slider__item__label">
-                                    Госсубсидирование
-                                    <svg width="17" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#bank-label"></use>
-                                    </svg>
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__logo">
-                                    <img src="img/bank1.png" alt="">
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__advantages">
-                                    <p>Первый взнос от 20%</p>
-                                    <p>Годовых от 5,9%</p>
-                                    <p>Срок ипотеки 30 лет</p>
-                                </div>
-                            </div>
-    
-                            <div class="complex__ipoteka__slider__item">
-                                <div class="complex__ipoteka__slider__item__label">
-                                    Госсубсидирование
-                                    <svg width="17" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#bank-label"></use>
-                                    </svg>
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__logo">
-                                    <img src="img/bank2.png" alt="">
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__advantages">
-                                    <p>Первый взнос от 20%</p>
-                                    <p>Годовых от 5,9%</p>
-                                    <p>Срок ипотеки 30 лет</p>
+                            <div>
+                                <div class="complex__ipoteka__slider__item">
+                                    <div class="complex__ipoteka__slider__item__label">
+                                        Госсубсидирование
+                                        <svg width="17" height="20">
+                                            <use xlink:href="img/icons/sprite.svg#bank-label"></use>
+                                        </svg>
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__logo">
+                                        <img src="img/bank1.png" alt="">
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__advantages">
+                                        <p>Первый взнос от 20%</p>
+                                        <p>Годовых от 5,9%</p>
+                                        <p>Срок ипотеки 30 лет</p>
+                                    </div>
                                 </div>
                             </div>
-    
-                            <div class="complex__ipoteka__slider__item">
-                                <div class="complex__ipoteka__slider__item__label">
-                                    Госсубсидирование
-                                    <svg width="17" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#bank-label"></use>
-                                    </svg>
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__logo">
-                                    <img src="img/bank1.png" alt="">
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__advantages">
-                                    <p>Первый взнос от 20%</p>
-                                    <p>Годовых от 5,9%</p>
-                                    <p>Срок ипотеки 30 лет</p>
-                                </div>
-                            </div>
-    
-                            <div class="complex__ipoteka__slider__item">
-                                <div class="complex__ipoteka__slider__item__label">
-                                    Госсубсидирование
-                                    <svg width="17" height="20">
-                                        <use xlink:href="img/icons/sprite.svg#bank-label"></use>
-                                    </svg>
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__logo">
-                                    <img src="img/bank1.png" alt="">
-                                </div>
-    
-                                <div class="complex__ipoteka__slider__item__advantages">
-                                    <p>Первый взнос от 20%</p>
-                                    <p>Годовых от 5,9%</p>
-                                    <p>Срок ипотеки 30 лет</p>
+                            
+                            <div>
+                                <div class="complex__ipoteka__slider__item">
+                                    <div class="complex__ipoteka__slider__item__label">
+                                        Госсубсидирование
+                                        <svg width="17" height="20">
+                                            <use xlink:href="img/icons/sprite.svg#bank-label"></use>
+                                        </svg>
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__logo">
+                                        <img src="img/bank2.png" alt="">
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__advantages">
+                                        <p>Первый взнос от 20%</p>
+                                        <p>Годовых от 5,9%</p>
+                                        <p>Срок ипотеки 30 лет</p>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            
+                            <div>
+                                <div class="complex__ipoteka__slider__item">
+                                    <div class="complex__ipoteka__slider__item__label">
+                                        Госсубсидирование
+                                        <svg width="17" height="20">
+                                            <use xlink:href="img/icons/sprite.svg#bank-label"></use>
+                                        </svg>
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__logo">
+                                        <img src="img/bank1.png" alt="">
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__advantages">
+                                        <p>Первый взнос от 20%</p>
+                                        <p>Годовых от 5,9%</p>
+                                        <p>Срок ипотеки 30 лет</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="complex__ipoteka__slider__item">
+                                    <div class="complex__ipoteka__slider__item__label">
+                                        Госсубсидирование
+                                        <svg width="17" height="20">
+                                            <use xlink:href="img/icons/sprite.svg#bank-label"></use>
+                                        </svg>
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__logo">
+                                        <img src="img/bank1.png" alt="">
+                                    </div>
+        
+                                    <div class="complex__ipoteka__slider__item__advantages">
+                                        <p>Первый взнос от 20%</p>
+                                        <p>Годовых от 5,9%</p>
+                                        <p>Срок ипотеки 30 лет</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     

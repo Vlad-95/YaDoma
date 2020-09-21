@@ -9,6 +9,23 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        infinite: false
+        infinite: false,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+            
+        ]
     })
 })

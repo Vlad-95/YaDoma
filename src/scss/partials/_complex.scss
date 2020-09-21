@@ -85,29 +85,48 @@
         padding: 30px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
-    &__main__info__title {
+    &__main__title {
         @extend %section-title;
         font-weight: 700;
         color: $baseColor;
         margin-bottom: 15px;
+        flex-basis: 60%;
     }
 
-    &__main__info__address {
+    &__main__price {
+        text-align: right;
+        flex-basis: 40%;
+    }
+
+    &__main__price__item {
+        @extend %font18;
+        color: $baseColor;
+
+        &_text {
+            @extend %font20;
+            font-weight: 500;
+        }
+    }
+
+    &__main__address {
         display: flex;
     }
 
-    &__main__info__address__item {
+    &__main__address__item {
         @extend %font20;
+        line-height: 1;
         display: flex;
+        align-items: center;
 
         a {
             color: $blue;
         }
     }
 
-    &__main__info__address__item__metro {
+    &__main__address__item__metro {
         padding-left: 20px;
         margin-right: 20px;
         position: relative;
@@ -133,7 +152,7 @@
         }
     }
 
-    &__main__info__address__item__time {       
+    &__main__address__item__time {       
         margin-right: 20px;
         position: relative;
         color: $darkGray;
@@ -165,28 +184,20 @@
         }
     }
 
-    &__main__info__address__item__street {
+    &__main__address__item__street {
         margin-right: 20px;
         color: $baseColor;
     }
 
-    &__main__price {
-        text-align: right;
-    }
-
-    &__main__price__item {
-        @extend %font18;
-        color: $baseColor;
-
-        &_text {
-            @extend %font20;
-            font-weight: 500;
-        }
-    }
+    
 
     &__main__nav {
         border-top: 1px solid $faqBorder;
         padding: 26px 30px 24px;
+        
+    }
+
+    &__main__nav__overflow {
         display: flex;
     }
 
@@ -353,6 +364,7 @@
 
         img {
             display: block;
+            max-width: 100%;
         }
     }
 
@@ -371,6 +383,7 @@
             padding: 0 15px;
             transition: 0.3s;
             opacity: 0;
+            outline: none;
 
             &.slick-active {
                 opacity: 1;
@@ -511,5 +524,588 @@
     &__credit__item__text {
         @extend %font18;
         line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .complex {
+        &__main__nav {
+            padding: 20px 30px 18px;
+        }
+
+        &__main__nav__item {
+            font-size: 16px;
+            white-space: nowrap;
+            margin-right: 15px;
+
+            &:after {
+                bottom: -18px;
+            }
+        }
+
+        &__picture__slider {
+            max-height: 462px;
+        }
+
+        &__picture__info {
+            padding: 30px;
+        }
+        &__picture__info__item {
+            font-size: 18px;
+
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__picture__info__item__name {
+            max-width: 150px;
+            padding-right: 15px;
+        }
+
+        &__place__map {
+            max-width: 50%;
+            min-width: 50%;
+            height: 350px;
+        }
+
+        &__place__text {
+            padding-left: 50px;
+        }
+
+        &__ipoteka__slider__item {
+            padding: 60px 20px 20px!important;
+        }
+
+        &__ipoteka__slider__item__label {
+            font-size: 16px;
+        }
+
+        &__ipoteka__slider__item__logo {
+            margin-bottom: 15px;
+            height: 60px;
+    
+            img {
+                max-height: 60px;
+            }
+        }
+
+        &__ipoteka__slider__item__advantages {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .complex {
+
+        .section {
+            &_second {
+                padding: 50px 0 60px;
+            }
+
+            &_third {
+                padding: 40px 0;
+            }
+
+            &_fourth {
+                padding: 40px 0;
+            }
+
+            &_fifth {
+                padding: 50px 0 40px;
+            }
+        }
+
+        &__block-title {
+            font-size: 20px;
+        }
+
+        &__main__row {
+            padding: 20px;
+        }
+
+        &__main__price__item {
+            font-size: 16px;
+    
+            &_text {
+                font-size: 18px;
+            }
+        }
+
+        &__main__address__item {
+            font-size: 16px;
+        }
+
+        &__main__nav {
+            padding: 16px 20px 14px;
+        }
+
+        &__main__nav__item {
+            font-size: 12px;
+
+            &:after {
+                bottom: -14px;
+            }
+        }
+
+        &__picture__slider {
+            max-height: 427px;
+        }
+
+        &__picture__info {
+            padding: 30px;
+            max-width: 410px;
+        }
+        &__picture__info__item {
+            font-size: 16px;
+
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__picture__info__item__name {
+            max-width: 130px;
+            padding-right: 15px;
+        }
+
+        &__picture__info__link {
+            font-size: 16px;
+            padding: 10px;
+            max-width: 170px;
+        }
+
+        &__descr {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        &__descr__text {
+            font-size: 16px;
+        }
+
+        &__place__text {
+            font-size: 16px;
+        }
+
+        &__advantages__item {
+            font-size: 16px;
+        }
+
+        &__ipoteka__slider__item {
+            padding: 50px 20px 20px!important;
+        }
+
+        &__ipoteka__slider__item__label {
+            font-size: 12px;
+            padding-right: 17px;
+
+            svg {
+                width: 10px;
+                height: 12px;
+            }
+        }
+
+        &__ipoteka__slider__item__logo {
+            margin-bottom: 15px;
+            height: 50px;
+    
+            img {
+                max-height: 50px;
+            }
+        }
+
+        &__ipoteka__slider__item__advantages {
+            font-size: 14px;
+        }
+
+        &__credit__wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__credit__item {
+            width: calc(50% - 30px);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        &__credit__item__name {
+            font-size: 35px;
+        }
+
+        &__credit__item__descr {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    
+        &__credit__item__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .complex {
+        .section {
+            &_first {
+                padding: 60px 0 30px;
+            }
+
+            &_second {
+                padding: 40px 0 50px;
+            }
+
+            &_third {
+                padding: 30px 0;
+            }
+
+            &_fourth {
+                padding: 30px 0;
+            }
+
+            &_fifth {
+                padding: 40px 0;
+            }
+        }
+
+        &__block-title {
+            font-size: 18px;
+        }
+
+        &__main__row {
+            padding: 20px 10px;
+        }
+
+        &__main__price__item {
+            font-size: 14px;
+    
+            &_text {
+                font-size: 16px;
+            }
+        }
+
+        &__main__address {
+            flex-wrap: wrap;
+        }
+
+        &__main__address__item {
+            font-size: 14px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+        }
+
+        &__main__nav {
+            padding: 12px 10px 10px;
+            overflow: hidden;
+            height: 37px;
+        }
+
+        &__main__nav__overflow {
+            overflow-x: scroll;
+            padding-bottom: 40px;
+        }
+
+        &__main__nav__item {          
+
+            &:after {
+                bottom: -10px;
+                height: 2px;
+            }
+        }
+
+        &__picture {
+            display: block;
+            margin-top: 20px;
+        }
+
+        &__picture__slider {
+            border-radius: 0;
+            max-height: 300px;
+        }
+        
+        &__picture__info {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            max-width: 100%;
+        }
+
+        &__picture__info__item {
+            font-size: 14px;
+        }
+
+        &__picture__info__item__name {
+            max-width: 50%;
+        }
+
+        &__picture__info__link {
+            font-size: 14px;
+        }
+
+        &__descr {
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+
+        &__descr__text {
+            font-size: 14px;
+        }
+
+        &__place__text {
+            font-size: 14px;
+        }
+
+        &__advantages__item {
+            font-size: 14px;
+            margin-bottom: 14px;
+            padding-left: 27px;
+            
+            &:before {
+                width: 17px;
+                height: 13px;
+                background-size: cover;
+            }
+        }
+
+        &__ipoteka {
+            margin-bottom: 90px;
+        }
+
+        &__credit__item__name {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        &__credit__item__descr {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    
+        &__credit__item__text {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .complex {
+
+        .section {
+            &_second {
+                padding: 30px 0 40px;
+            }
+
+            &_third {
+                padding: 25px 0;
+            }
+
+            &_fifth {
+                padding: 30px 0 10px; 
+            }
+        }
+
+        &__block-title {
+            font-size: 16px;
+
+            &_descr {
+                margin-bottom: 15px;
+            }
+
+            &_place {
+                margin-bottom: 20px;
+            }
+
+            &_advantages {
+                margin-bottom: 20px;
+            }
+
+            &_plan {
+                margin-bottom: 20px;
+            }
+
+            &_ipoteka {
+                margin-bottom: 20px;
+            }
+
+            &_credit {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__main__price__item {
+            font-size: 12px;
+    
+            &_text {
+                font-size: 14px;
+            }
+        }
+
+        &__main__address__item {
+            font-size: 12px;
+        }
+
+        &__picture__slider {
+            max-height: 250px;
+        }
+
+        &__picture__info {
+            padding: 20px;
+        }
+
+        &__picture__info__item {
+            font-size: 12px;
+            margin-bottom: 10px;
+
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__picture__info__link {
+            font-size: 12px;
+        }
+
+        &__descr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__descr__text {
+            font-size: 12px;
+        }
+
+        &__place__wrap {
+            display: block;
+        }
+
+        &__place__map {
+            max-width: 100%;
+            min-width: 100%;
+            height: 185px;
+            margin-bottom: 20px;
+        }
+
+        &__place__text {
+            font-size: 12px;
+            padding-left: 0;
+        }
+
+        &__advantages__item {
+            font-size: 12px;
+        }
+
+        &__ipoteka {
+            margin-bottom: 60px;
+        }
+
+        &__ipoteka__slider {
+
+            .slick-dots {
+                bottom: -40px;
+            }
+
+            .slick-dots li {
+                margin: 0;
+            }
+
+            .slick-dots li button:before {
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        &__ipoteka__slider__item {
+            padding: 40px 20px 20px!important;
+        }
+
+        &__ipoteka__slider__item__label {
+            font-size: 10px;
+        }
+
+        &__ipoteka__slider__item__logo {
+            margin-bottom: 15px;
+            height: 40px;
+    
+            img {
+                max-height: 40px;
+            }
+        }
+
+        &__ipoteka__slider__item__advantages {
+            font-size: 12px;
+        }
+
+        &__credit__wrap {
+            display: block;
+        }
+
+        &__credit__item {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        &__credit__item__name {
+            font-size: 24px;
+        }
+
+        &__credit__item__descr {
+            font-size: 16px;
+        }
+    
+        &__credit__item__text {
+            font-size: 12px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .complex {
+        &__main__title {
+            flex-basis: 100%;
+        }
+
+        &__main__price {
+            text-align: left;
+            flex-basis: 100%;
+            margin-bottom: 15px;
+        }
+
+        &__main__address__item {
+            flex-wrap: wrap;
+        }
+
+        &__main__address__item__metro {
+            margin-right: 15px;
+        }
+
+        &__main__address__item__street {
+            margin-right: 15px;
+        }
+
+        &__picture__slider {
+            max-height: 180px;
+        }
+
+        &__picture__info {
+            padding: 20px 15px;
+        } 
+
+        &__picture__info__item__name {
+            max-width: 45%;
+        }        
+
+        &__picture__info__link {
+            max-width: 100%;
+            padding: 8px;
+        }
     }
 }
