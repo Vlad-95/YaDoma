@@ -2483,6 +2483,274 @@ textarea {
     .ipoteka__select__dropdown__item.active:before, .ipoteka__select__dropdown__item:hover:before {
       opacity: 1; }
 
+.ipoteka-calc {
+  background-color: #F2F6FF;
+  padding: 110px 0 100px; }
+  .ipoteka-calc__title {
+    margin-bottom: 60px; }
+  .ipoteka-calc__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .ipoteka-calc__form {
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 42px #C7D4DF;
+            box-shadow: 0px 10px 42px #C7D4DF;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 620px;
+    margin-right: 30px; }
+  .ipoteka-calc__top {
+    padding: 50px;
+    border-bottom: 1px solid #C7D4DF; }
+  .ipoteka-calc__item {
+    margin-bottom: 78px; }
+    .ipoteka-calc__item:last-of-type {
+      margin-bottom: 0; }
+      .ipoteka-calc__item:last-of-type .ipoteka-calc__item__title {
+        margin-bottom: 20px; }
+  .ipoteka-calc__item__title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 145%;
+    color: #292929;
+    margin-bottom: 70px; }
+  .ipoteka-calc__item__range.range-price .scale {
+    top: 10px; }
+    .ipoteka-calc__item__range.range-price .scale span {
+      border: none; }
+      .ipoteka-calc__item__range.range-price .scale span:first-of-type ins {
+        margin-left: 0 !important; }
+      .ipoteka-calc__item__range.range-price .scale span:last-of-type ins {
+        margin-left: -90px !important; }
+  .ipoteka-calc__item__range.range-year .scale {
+    top: 10px; }
+    .ipoteka-calc__item__range.range-year .scale span {
+      border: none; }
+      .ipoteka-calc__item__range.range-year .scale span:first-of-type ins {
+        margin-left: 0 !important; }
+      .ipoteka-calc__item__range.range-year .scale span:last-of-type ins {
+        margin-left: -57px !important; }
+  .ipoteka-calc__item__range.range-firstpaid .scale {
+    top: 10px; }
+    .ipoteka-calc__item__range.range-firstpaid .scale span {
+      border: none; }
+      .ipoteka-calc__item__range.range-firstpaid .scale span:first-of-type ins {
+        margin-left: 0 !important; }
+      .ipoteka-calc__item__range.range-firstpaid .scale span:last-of-type ins {
+        margin-left: -90px !important; }
+  .ipoteka-calc__item__input.range-percent {
+    padding: 13px 20px;
+    background-color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid #C7D4DF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 2px 3px 20px rgba(207, 221, 234, 0.4);
+            box-shadow: 2px 3px 20px rgba(207, 221, 234, 0.4);
+    border-radius: 3px; }
+    .ipoteka-calc__item__input.range-percent input {
+      font-size: 20px;
+      line-height: 135%;
+      font-family: "Mazzard H", sans-serif;
+      color: #292929;
+      width: 60px;
+      border: none;
+      outline: none; }
+  .ipoteka-calc__item__check input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+    .ipoteka-calc__item__check input:checked + .ipoteka-calc__item__check__text:before {
+      background: -webkit-gradient(linear, right top, left top, from(#FFB342), color-stop(51.56%, #F7931A), to(#F7711A));
+      background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%); }
+    .ipoteka-calc__item__check input:checked + .ipoteka-calc__item__check__text:after {
+      left: 237px; }
+  .ipoteka-calc__item__check__text {
+    padding-right: 80px;
+    position: relative;
+    cursor: pointer;
+    color: #7889A7;
+    font-size: 20px;
+    line-height: 135%; }
+    .ipoteka-calc__item__check__text:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 60px;
+      height: 30px;
+      border-radius: 18px;
+      background-color: #C7D4DF; }
+    .ipoteka-calc__item__check__text:after {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 100px;
+      background-color: #FFFFFF;
+      left: 207px;
+      top: 1px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+  .ipoteka-calc .slider-container .back-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(140, 159, 177, 0.3);
+    border-radius: 3px; }
+    .ipoteka-calc .slider-container .back-bar .pointer {
+      width: 34px;
+      height: 34px;
+      border-radius: 50px;
+      cursor: pointer;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border: none;
+      background: -webkit-gradient(linear, right top, left top, from(#FFB342), color-stop(51.56%, #F7931A), to(#F7711A));
+      background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%); }
+      .ipoteka-calc .slider-container .back-bar .pointer:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        margin: auto; }
+    .ipoteka-calc .slider-container .back-bar .pointer-label {
+      top: -50px;
+      right: 0;
+      padding: 9px 20px 12px;
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+      line-height: 135%;
+      color: #292929;
+      font-family: "Mazzard H", sans-serif;
+      border: 1px solid #C7D4DF;
+      background-color: #FFFFFF;
+      -webkit-box-shadow: 2px 3px 20px rgba(207, 221, 234, 0.4);
+              box-shadow: 2px 3px 20px rgba(207, 221, 234, 0.4);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      z-index: 0; }
+  .ipoteka-calc .slider-container .selected-bar {
+    background: -webkit-gradient(linear, right top, left top, from(#FFB342), color-stop(51.56%, #F7931A), to(#F7711A));
+    background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%);
+    height: 6px;
+    border-radius: 3px; }
+  .ipoteka-calc .slider-container .scale {
+    top: 10px; }
+    .ipoteka-calc .slider-container .scale span {
+      border: none; }
+    .ipoteka-calc .slider-container .scale ins {
+      font-family: "Mazzard H", sans-serif;
+      font-size: 18px;
+      color: #8C9FB1;
+      line-height: 135%;
+      white-space: nowrap; }
+  .ipoteka-calc__bottom {
+    padding: 50px; }
+  .ipoteka-calc__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 23px;
+    line-height: 145%;
+    color: #292929; }
+    .ipoteka-calc__text:not(:last-of-type) {
+      margin-bottom: 15px; }
+  .ipoteka-calc__result {
+    width: 100%;
+    max-width: 880px;
+    -webkit-box-shadow: 0px 10px 42px #abb0b6;
+            box-shadow: 0px 10px 42px #abb0b6;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    .ipoteka-calc__result__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 28px 50px 20px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #FFFFFF;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .ipoteka-calc__result__item:hover {
+        background-color: #F2F6FF; }
+        .ipoteka-calc__result__item:hover .ipoteka-calc__result__logo {
+          -webkit-filter: grayscale(0);
+                  filter: grayscale(0); }
+      .ipoteka-calc__result__item:not(:last-of-type) {
+        border-bottom: 1px solid #C7D4DF; }
+    .ipoteka-calc__result__logo {
+      width: 60px;
+      height: 60px;
+      background-color: #FFFFFF;
+      border-radius: 7px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-right: 30px;
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1);
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .ipoteka-calc__result__logo img {
+        max-width: 100%; }
+    .ipoteka-calc__result__info {
+      padding-right: 10px; }
+      .ipoteka-calc__result__info p {
+        font-size: 20px;
+        line-height: 150%;
+        color: #292929; }
+        .ipoteka-calc__result__info p.ipoteka-calc__result__name {
+          color: #7889A7;
+          margin-bottom: 12px; }
+    .ipoteka-calc__result__price {
+      margin: 0 0 0 auto; }
+      .ipoteka-calc__result__price p {
+        font-size: 20px;
+        line-height: 150%;
+        color: #7889A7;
+        text-align: right; }
+        .ipoteka-calc__result__price p.ipoteka-calc__result__percent {
+          font-size: 23px;
+          color: #292929;
+          font-weight: 700;
+          margin-bottom: 10px; }
+
 @media screen and (max-width: 1200px) {
   .ipoteka-section__title {
     margin-bottom: 30px; }
@@ -4488,12 +4756,23 @@ textarea {
     .map__modal__checkbox__text:after {
       top: 1px; } }
 
+.plan .section_second {
+  margin-top: 100px;
+  padding-bottom: 110px; }
+
 .plan__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 130%;
   color: #292929;
   margin-bottom: 50px; }
+
+.plan__link {
+  font-size: 21px;
+  line-height: 145%;
+  color: #1D91FF;
+  display: inline-block;
+  margin-bottom: 40px; }
 
 .plan__btns {
   display: -webkit-box;
@@ -4526,7 +4805,10 @@ textarea {
     bottom: 0;
     margin: auto; }
   .plan__btn_flat {
-    padding-left: 56px; }
+    padding-left: 56px;
+    position: absolute;
+    left: 244px;
+    bottom: 15px; }
     .plan__btn_flat:before {
       left: 19px;
       width: 22px;
@@ -4564,10 +4846,86 @@ textarea {
       -ms-flex-align: start;
           align-items: flex-start; }
 
+.plan__left {
+  width: 100%;
+  max-width: 1010px; }
+  .plan__left_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+
+.plan__thumbs {
+  width: 100%;
+  max-width: 214px;
+  margin-right: 30px; }
+
+.plan__thumbs__item {
+  border: 1px solid #C7D4DF !important;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 130px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  margin: 15px 0;
+  opacity: 0.7 !important; }
+  .plan__thumbs__item img {
+    max-width: 100%; }
+  .plan__thumbs__item.slick-current {
+    opacity: 1 !important; }
+
+.plan__slider {
+  width: 100%;
+  height: 460px;
+  border: 1px solid #C7D4DF;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.plan__slider__item {
+  outline: none;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 460px; }
+  .plan__slider__item img {
+    max-width: 100%;
+    max-height: 100%; }
+
+.plan__picture__icons {
+  position: absolute;
+  left: 244px;
+  top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .plan__picture__icons a:not(:last-of-type) {
+    margin-right: 30px; }
+
 .plan__info {
   background-color: #FFFFFF;
   width: 100%;
   max-width: 490px;
+  min-width: 490px;
   -webkit-box-shadow: 0px 10px 27px rgba(207, 221, 234, 0.8);
           box-shadow: 0px 10px 27px rgba(207, 221, 234, 0.8);
   border-radius: 10px;
@@ -4653,9 +5011,252 @@ textarea {
 .plan__map {
   border-radius: 10px;
   overflow: hidden;
-  max-height: 620px; }
+  max-height: 620px;
+  width: 100%; }
   .plan__map img {
     display: block;
     max-width: 100%; }
+
+@media screen and (max-width: 1560px) {
+  .plan__title {
+    margin-bottom: 30px; }
+  .plan__link {
+    margin-bottom: 20px; }
+  .plan__btn {
+    font-size: 16px; }
+    .plan__btn_flat {
+      left: 0;
+      bottom: auto;
+      top: 0; }
+  .plan__left {
+    width: 100%;
+    max-width: 650px; }
+    .plan__left_flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding-top: 79px; }
+  .plan__thumbs {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 20px; }
+  .plan__thumbs__item {
+    height: 80px !important;
+    margin: 0 10px; }
+  .plan__slider {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 350px; }
+  .plan__slider__item {
+    height: 100%; }
+  .plan__picture__icons {
+    left: 260px;
+    top: 15px; }
+  .plan__info__item:not(:last-of-type) {
+    margin-bottom: 24px; }
+  .plan__info__item p {
+    font-size: 16px; }
+  .plan__info__item_full p {
+    font-size: 18px; }
+  .plan__info__links {
+    margin-top: 45px; }
+  .plan__info__link {
+    font-size: 16px;
+    padding: 10px 0; } }
+
+@media screen and (max-width: 1200px) {
+  .plan__title {
+    font-size: 40px; }
+  .plan__link {
+    font-size: 16px; }
+  .plan__left {
+    max-width: 557px; }
+    .plan__left_flex {
+      padding-top: 77px; }
+  .plan__info {
+    padding: 24px 20px;
+    max-width: 375px;
+    min-width: 375px; }
+  .plan__btn {
+    font-size: 14px; }
+    .plan__btn_flat {
+      max-width: 200px; }
+    .plan__btn_compare {
+      padding-left: 50px; }
+      .plan__btn_compare:before {
+        left: 15px; }
+    .plan__btn_presentation {
+      padding-left: 45px; }
+      .plan__btn_presentation:before {
+        left: 15px; }
+  .plan__picture__icons {
+    left: 230px;
+    top: 10px; }
+  .plan__thumbs__item {
+    height: 65px !important;
+    margin: 0 2px; }
+  .plan__slider {
+    height: 300px; }
+  .plan__info_right .plan__info__item__name {
+    white-space: normal; }
+  .plan__info_right p:last-of-type {
+    min-width: none;
+    white-space: normal;
+    text-align: right; }
+  .plan__info__item:not(:last-of-type) {
+    margin-bottom: 24px; }
+  .plan__info__item p {
+    font-size: 14px; }
+  .plan__info__links {
+    margin-top: 45px; }
+  .plan__info__link {
+    font-size: 14px;
+    padding: 10px 0; } }
+
+@media screen and (max-width: 992px) {
+  .plan {
+    padding-top: 80px; }
+    .plan .section_second {
+      margin-top: 50px;
+      padding-bottom: 65px; }
+    .plan__title {
+      font-size: 35px;
+      margin-bottom: 14px; }
+    .plan__btns {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-bottom: 20px; }
+    .plan__btn_compare {
+      max-width: 175px;
+      padding-left: 50px; }
+      .plan__btn_compare:before {
+        left: 15px; }
+    .plan__btn_presentation {
+      max-width: 175px;
+      padding-left: 45px; }
+      .plan__btn_presentation:before {
+        left: 15px; }
+    .plan__wrap {
+      display: block; }
+    .plan__left {
+      max-width: 100%; }
+    .plan__right {
+      margin-top: 30px; }
+    .plan__info {
+      max-width: 100%;
+      min-width: 100%; }
+    .plan__info__links {
+      margin-top: 45px;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .plan__address {
+      font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .plan .section_second {
+    margin-top: 30px;
+    padding-bottom: 40px; }
+  .plan__title {
+    font-size: 25px; }
+  .plan__btn {
+    font-size: 12px;
+    padding: 9px 0; }
+    .plan__btn_flat {
+      max-width: 160px;
+      padding-left: 39px; }
+      .plan__btn_flat:before {
+        left: 17px;
+        width: 14px;
+        height: 14px;
+        background-size: cover; }
+    .plan__btn_compare {
+      padding-left: 42px;
+      max-width: 140px; }
+      .plan__btn_compare:before {
+        left: 17px;
+        width: 19px;
+        height: 19px;
+        background-size: cover; }
+    .plan__btn_presentation {
+      padding-left: 31px;
+      max-width: 140px; }
+      .plan__btn_presentation:before {
+        left: 9px;
+        width: 14px;
+        height: 14px;
+        background-size: cover; }
+  .plan__left_flex {
+    padding-top: 42px; }
+  .plan__slider {
+    height: 260px; }
+  .plan__picture__icons {
+    left: 200px;
+    top: 2px; }
+  .plan__info_right .plan__info__item__name {
+    white-space: normal; }
+  .plan__info_right p:last-of-type {
+    min-width: none;
+    white-space: normal;
+    text-align: right; }
+  .plan__info__item:not(:last-of-type) {
+    margin-bottom: 10px; }
+  .plan__info__item p {
+    font-size: 12px; }
+    .plan__info__item p:last-of-type {
+      min-width: 100px;
+      white-space: nowrap; }
+  .plan__info__links {
+    margin-top: 30px; }
+  .plan__info__link {
+    font-size: 12px;
+    padding: 7px 0;
+    border-radius: 3px;
+    border-width: 1px; }
+  .plan__address {
+    font-size: 14px;
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 576px) {
+  .plan {
+    padding-top: 60px; }
+    .plan__thumbs__item {
+      height: 56px !important;
+      margin: 0 5px 0 0; }
+    .plan__slider {
+      height: 184px; }
+    .plan__picture__icons {
+      left: 180px; }
+      .plan__picture__icons a {
+        width: 16px; }
+        .plan__picture__icons a:not(:last-of-type) {
+          margin-right: 20px; }
+        .plan__picture__icons a img {
+          max-width: 100%; }
+    .plan__info {
+      padding: 20px 10px;
+      border-radius: 6px; }
+      .plan__info_right .plan__info__item__name {
+        white-space: normal; }
+      .plan__info_right p:last-of-type {
+        min-width: none;
+        white-space: normal;
+        text-align: right; }
+    .plan__info__links {
+      display: block; }
+    .plan__info__link {
+      max-width: 100%; }
+      .plan__info__link:not(:last-of-type) {
+        margin-bottom: 10px; }
+    .plan__address {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -43,10 +43,22 @@
         <section class="section section_first">
             <div class="container">
                 <h1 class="plan__title">2Е-к.кв. ЖК Невские панорамы</h1>
+                <a href="housing-complex.html" class="plan__link">Страница ЖК</a>
                 <!-- Блок со слайдером -->
                 <div class="plan__wrap">
-                    <div class="plan__left">
+                    
+                    <div class="plan__left plan__left_flex">
+                        
                         <div class="plan__thumbs">
+                            <div class="plan__thumbs__item">
+                                <img src="img/plan1.png" alt="">
+                            </div>
+                            <div class="plan__thumbs__item">
+                                <img src="img/complex-main.jpg" alt="">
+                            </div>
+                            <div class="plan__thumbs__item">
+                                <img src="img/complex-main.jpg" alt="">
+                            </div>
                             <div class="plan__thumbs__item">
                                 <img src="img/complex-main.jpg" alt="">
                             </div>
@@ -55,12 +67,21 @@
                             </div>
                         </div>
                         <div class="plan__picture__icons">
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
-                            <a href="javascript:;"></a>
+                            <a href="javascript:;"><img src="img/icons/link.svg" alt=""></a>
+                            <a href="javascript:;"><img src="img/icons/printer.svg" alt=""></a>
+                            <a href="javascript:;"><img src="img/icons/download.svg" alt=""></a>
                         </div>
     
                         <div class="plan__slider">
+                            <div class="plan__slider__item">
+                                <img src="img/plan1.png" alt="">
+                            </div>
+                            <div class="plan__slider__item">
+                                <img src="img/complex-main.jpg" alt="">
+                            </div>
+                            <div class="plan__slider__item">
+                                <img src="img/complex-main.jpg" alt="">
+                            </div>
                             <div class="plan__slider__item">
                                 <img src="img/complex-main.jpg" alt="">
                             </div>
@@ -211,6 +232,114 @@
             </div>
         </section>
 
+        <section class="section ipoteka-calc section_third">
+            <div class="container">
+                <h2 class="section__title ipoteka-calc__title">Калькулятор ипотеки</h2>
+                <div class="ipoteka-calc__wrap">
+                    <form action="" class="ipoteka-calc__form">
+                        <div class="ipoteka-calc__top">
+                            <div class="ipoteka-calc__item">
+                                <p class="ipoteka-calc__item__title">Стоимость квартиры</p>
+    
+                                <div class="ipoteka-calc__item__range range-price">
+                                    <input class="hidden price" type="hidden" name="price" value="20000000">                                
+                                </div>
+                            </div>
+    
+                            <div class="ipoteka-calc__item">
+                                <p class="ipoteka-calc__item__title">Срок кредита</p>
+    
+                                <div class="ipoteka-calc__item__range range-year">
+                                    <input class="hidden year" type="hidden" name="year" value="15">                                
+                                </div>
+                            </div>
+    
+                            <div class="ipoteka-calc__item">
+                                <p class="ipoteka-calc__item__title">Размер первого взноса</p>
+    
+                                <div class="ipoteka-calc__item__range range-firstpaid">
+                                    <input class="hidden firstpaid" type="hidden" name="firstpaid" value="3000000">                                
+                                </div>
+                            </div>
+
+                            <div class="ipoteka-calc__item">
+                                <p class="ipoteka-calc__item__title">Ставка</p>
+    
+                                <div class="ipoteka-calc__item__input range-percent">
+                                    <input class="hidden percent" type="text" name="percent" value="8.7">
+                                    
+                                    <label class="ipoteka-calc__item__check">
+                                        <input type="checkbox" name="average" id="">
+                                        <div class="ipoteka-calc__item__check__text">Средняя по рынку</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ipoteka-calc__bottom">
+                            <div class="ipoteka-calc__text">
+                                <p>Платеж в месяц</p>
+                                <p>247 357 ₽</p>
+                            </div>
+                            <div class="ipoteka-calc__text">
+                                <p>Сумма кредита</p>
+                                <p>12 000 000 ₽</p>
+                            </div>
+                            <div class="ipoteka-calc__text">
+                                <p>Необходимый доход</p>
+                                <p>494 713 ₽</p>
+                            </div>
+                        </div>
+                        
+                    </form>
+
+                    <div class="ipoteka-calc__result">
+                        <div class="ipoteka-calc__result__item">
+                            <div class="ipoteka-calc__result__logo">
+                                <img src="img/ipoteka-bank1.png" alt="">
+                            </div>
+                            <div class="ipoteka-calc__result__info">
+                                <p class="ipoteka-calc__result__name">Промсвязьбанк (ПАО)</p>
+                                <p>ГС 2020 (до 12 млн руб.) — Промсвязьбанк (5.85%)</p>
+                            </div>
+
+                            <div class="ipoteka-calc__result__price">
+                                <p class="ipoteka-calc__result__percent">5,85%</p>
+                                <p>ПВ от 20%</p>
+                            </div>
+                        </div>
+                        <div class="ipoteka-calc__result__item">
+                            <div class="ipoteka-calc__result__logo">
+                                <img src="img/ipoteka-bank2.png" alt="">
+                            </div>
+                            <div class="ipoteka-calc__result__info">
+                                <p class="ipoteka-calc__result__name">Промсвязьбанк (ПАО)</p>
+                                <p>ГС 2020 (до 12 млн руб.) — Промсвязьбанк (5.85%)</p>
+                            </div>
+
+                            <div class="ipoteka-calc__result__price">
+                                <p class="ipoteka-calc__result__percent">5,85%</p>
+                                <p>ПВ от 20%</p>
+                            </div>
+                        </div>
+                        <div class="ipoteka-calc__result__item">
+                            <div class="ipoteka-calc__result__logo">
+                                <img src="img/ipoteka-bank3.png" alt="">
+                            </div>
+                            <div class="ipoteka-calc__result__info">
+                                <p class="ipoteka-calc__result__name">Промсвязьбанк (ПАО)</p>
+                                <p>ГС 2020 (до 12 млн руб.) — Промсвязьбанк (5.85%)</p>
+                            </div>
+
+                            <div class="ipoteka-calc__result__price">
+                                <p class="ipoteka-calc__result__percent">5,85%</p>
+                                <p>ПВ от 20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
     </div>
     
@@ -288,7 +417,9 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/libs/slick/slick.min.js"></script>
-    <script src="js/complex.js"></script>
+    <script src="js/libs/jRange/jquery.range-min.js"></script>
+    <script src="js/ipoteka.js"></script>
+    <script src="js/plan.js"></script>
     
 </body>
 </html>

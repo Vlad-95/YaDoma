@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // калькулятор на главной странице
     $('.ipoteka-section__calc__item__range input.price').jRange({
         from: 100000,
         to: 5000000,
@@ -14,6 +15,33 @@ $(document).ready(function() {
         width: '100%',
         format: "%s лет",
         step: 1,
+    });
+
+    // калькулятор на странице ипотеки
+    $('.ipoteka-calc__item__range input.price').jRange({
+        from: 1500000,
+        to: 30000000,
+        step: 250000,
+        width: '100%',
+        format: "%s ₽",
+        theme: ""
+    });
+
+    $('.ipoteka-calc__item__range input.year').jRange({
+        from: 0,
+        to: 25,
+        scale: ['3 года','5 лет','10 лет','15 лет','20 лет', '25 лет'],
+        width: '100%',
+        format: "%s лет",
+        step: 1,
+    });
+
+    $('.ipoteka-calc__item__range input.firstpaid').jRange({
+        from: 0,
+        to: 30000000,
+        step: 250000,
+        width: '100%',
+        theme: ""
     });
 
     $(document).on('click', function(evt) {
