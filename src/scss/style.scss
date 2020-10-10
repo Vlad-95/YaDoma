@@ -1,15 +1,26 @@
 @import "partials/fonts";
 @import "partials/settings";
-@import "partials/header";
-@import "partials/intro";
-@import "partials/filter";
-@import "partials/offers";
-@import "partials/buyers";
-@import "partials/ipoteka";
-@import "partials/collection";
-@import "partials/faq";
-@import "partials/sort";
-@import "partials/footer";
-@import "partials/complex";
-@import "partials/map";
-@import "partials/plan";
+
+//pages
+@import "partials/pages/complex";
+@import "partials/pages/plan";
+
+//reusable-blocks
+@import "partials/reusable-blocks/offers";
+@import "partials/reusable-blocks/ipoteka-calc";
+@import "partials/reusable-blocks/faq";
+
+//unique-blocks
+@import "partials/unique-blocks/intro-main";
+@import "partials/unique-blocks/buyers";
+@import "partials/unique-blocks/ipoteka-main";
+@import "partials/unique-blocks/collection";
+@import "partials/unique-blocks/map";
+
+//reusable-elems
+@import "partials/reusable-elements/header";
+@import "partials/reusable-elements/footer";
+@import "partials/reusable-elements/filter";
+@import "partials/reusable-elements/sort";
+
+//unique-elems

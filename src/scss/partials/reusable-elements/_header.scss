@@ -9,9 +9,17 @@
         padding: 30px 0 66px;
     }
 
+    &_ipoteka {
+        padding: 30px 0 66px;
+    }
+
     &__wrap {
         display: flex;
         align-items: flex-end;
+    }
+
+    &__logo {
+        font-size: 12px;
     }
 
     &__menu {
