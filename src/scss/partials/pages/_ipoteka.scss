@@ -1,0 +1,394 @@
+.ipoteka {
+    
+    .ipoteka-get {
+        padding: 233px 0 120px;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__subtitle {
+            font-size: 23px;
+            line-height: 150%;
+            font-weight: 400;
+            color: $baseColor;   
+            margin-bottom: 80px;
+        }
+
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        
+        &__item {
+            box-shadow: 4px 9px 30px rgba(140, 159, 177, 0.3);
+            border-radius: 10px;
+            background-color: $white;
+            padding: 70px 40px 77px;
+            width: calc(50% - 30px);
+            margin: 0 15px;
+        }
+
+        &__item__top {
+            border-bottom: 1px solid #EBECED;
+            padding-bottom: 50px;
+
+            .ipoteka-get__item__text {
+                max-width: 390px;
+            }
+        }
+
+        &__item__title {
+            font-size: 50px;
+            line-height: 150%;
+            color: $faqBorder;
+            margin-bottom: 20px;
+
+            &_light-green {
+                color: $lightGreen;
+            }
+        }
+
+        &__item__text {
+            font-size: 21px;
+            line-height: 150%;
+            color: $baseColor;
+        }
+
+        &__item__list {
+            margin: 45px 0 30px;
+            li {
+                position: relative;
+                padding-left: 30px;
+                font-size: 21px;
+                line-height: 150%;
+                color: $baseColor;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 20px;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 14px;
+                    width: 20px;
+                    height: 2px;
+                    background-color: $faqBorder;
+                    border-radius: 100px;
+                }
+            }
+
+            &_light-green {
+                li {
+                    padding-left: 43px;
+                    &:before {
+                        width: 28px;
+                        height: 21px;
+                        top: 4px;
+                        background-color: inherit;
+                        background-image: url(../img/icons/check-green.svg);
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            width: 360px;
+            height: 70px;
+            text-align: center;   
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: $white;
+            box-shadow: 0px 19px 34px rgba(87, 204, 186, 0.5);
+            margin: 80px auto 0;
+        }
+    }
+
+    .ipoteka-partners {
+        padding: 110px 0 130px;
+
+        &__title {
+            font-size: 50px;
+            line-height: 130%;
+            color: $baseColor;
+            margin-bottom: 30px;
+        }
+        
+        &__subtitle {
+            font-size: 23px;
+            line-height: 150%;
+            font-weight: 400;
+            max-width: 850px;
+            color: $baseColor;
+        }
+
+        &__slider {
+            margin-top: 90px;
+            .slick-prev:before,
+            .slick-next:before {
+                font-family: none;
+                font-size: 0;
+                line-height: 1;
+            
+                opacity: 1;
+                color: white;
+            
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            
+            .slick-prev {
+                background-image: url(../img/icons/filter-arrow.svg);
+                background-repeat: no-repeat;
+                transform: rotate(90deg);
+                width: 15px;
+                height: 8px;
+                left: 0;
+                z-index: 3;
+                top: 42%;
+            }
+
+            .slick-next {
+                background-image: url(../img/icons/filter-arrow.svg);
+                background-repeat: no-repeat;
+                transform: rotate(-90deg);
+                width: 15px;
+                height: 8px;
+                right: 0;
+                z-index: 3;
+                top: 42%;
+            }
+        }
+
+        &__slide {
+            outline: none;
+            text-align: center;
+            display: flex!important;
+            align-items: center!important;
+            filter: grayscale(1);
+            transition: 0.3s;
+
+            img {
+                margin: 0 auto;
+            }
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+
+
+    .ipoteka-chance {
+        background-color: $lightGreen;
+        position: relative;
+        padding: 120px 0 115px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50px;
+            width: 448px;
+            height: 448px;
+            background-image: url(../img/ipoteka-chance-logo.png);
+            margin: 0 auto;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 63px;
+            bottom: 0;
+            width: 826px;
+            height: 550px;
+            background-image: url(../img/ipoteka-chance.png);
+        }
+
+        &__title {
+            font-size: 50px;
+            line-height: 130%;
+            color: $white;
+            margin-bottom: 30px;
+            max-width: 770px;
+        }
+
+        &__subtitle {
+            font-size: 23px;
+            line-height: 150%;
+            color: $white;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+
+        &__btn {
+            width: 360px;
+            height: 70px;
+            text-align: center;   
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: $lightGreen;
+            background-color: $white;
+            box-shadow: 4px 9px 23px #41BBA8;
+            font-size: 21px;
+            line-height: 145%;
+        }
+    }
+
+    .ipoteka-feedback {
+        padding-bottom: 150px;
+        
+        &__title {
+            font-size: 50px;
+            line-height: 130%;
+            color: $white;
+            max-width: 365px;
+        }
+
+        &__wrap {
+            display: flex;
+            box-shadow: 0px 10px 36px rgba(140, 159, 177, 0.25);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        &__left {
+            background-image: url(../img/ipoteka-feedback.png);
+            width: 60%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding: 110px 60px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 30px;
+                width: 70px;
+                height: 70px;
+                background-image: url(../img/ipoteka-feedback-logo.png);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 32px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 63px;
+                height: 20px;
+                background-image: url(../img/arrows.png);
+            }
+        }
+
+        &__form {
+            padding: 60px 108px;
+            width: 40%;
+
+            &__title {
+                font-size: 23px;
+                line-height: 145%;
+                font-weight: 400;
+                color: $baseColor;
+                margin-bottom: 34px;
+                text-align: center;
+            }
+
+            &__label {
+                position: relative;
+                display: block;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__input {
+                box-shadow: 4px 6px 23px rgba(140, 159, 177, 0.2);
+                border-radius: 7px;
+                width: 100%;
+                height: 70px;
+                font-family: $mazzard;
+                padding: 0 30px;
+                font-size: 20px;
+                line-height: 22px;
+                color: $baseColor;
+                border: none;
+                display: block;                
+            }
+
+            &__submit {
+                font-family: $mazzard;
+                font-size: 21px;
+                line-height: 22px;
+                font-weight: 700;
+                color: $white;
+                background-color: $lightGreen;
+                border: none;
+                border-radius: 7px;
+                height: 70px;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            &__checkbox {
+                position: absolute;
+                z-index: -1;
+
+                &:checked + .ipoteka-feedback__form__checkbox-text:after {
+                    opacity: 1;
+                }
+
+            }
+
+            &__checkbox-text {
+                font-size: 17px;
+                line-height: 150%;
+                color: $baseColor;
+                position: relative;
+                padding-left: 39px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 24px;
+                    height: 24px;
+                    border: 2px solid $faqBorder;
+                    border-radius: 3px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 4px;
+                    top: 6px;
+                    width: 16px;
+                    height: 12px;
+                    background-image: url(../img/icons/check-green.svg);
+                    background-size: cover;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+
+                a {
+                    color: $lightBlue;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

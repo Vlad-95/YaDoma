@@ -8,6 +8,7 @@ $baseColor: #292929;
 $yellow: #FFB342;
 $white: #FFFFFF;
 $bgGray: #F2F6FF;
+$lightGray: #F9F9F9;
 $blue: #1D91FF;
 $red: #F7125C;
 $green: #49C9A5;
@@ -15,6 +16,7 @@ $darkGray: #8C9FB1;
 $offersShadow: #CFDDEA;
 $faqBorder: #C7D4DF;
 $metroGreen: #76BC68;
+$lightGreen: #57CCBA;
 
 // размеры шрифтов
 // базовый размер
@@ -96,6 +98,10 @@ body {
     
     &_yellow {
         background: linear-gradient(270deg, #FFB342 0%, #F7931A 51.56%, #F7711A 100%);
+    }
+
+    &_light-green {
+        background-color: $lightGreen;
     }
 }
 

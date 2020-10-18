@@ -74,4 +74,18 @@ $(document).ready(function() {
         // меняем значение в инпуте
         selectInput.val(itemValue);        
     });
+
+    //одинаковая высота заголовков в блоке "КАК ПОЛУЧИТЬ ИПОТЕКУ?"
+    $('.ipoteka-get__item__top').matchHeight();
+
+    //слайдер партнеров
+    if($('.ipoteka-partners__slider').length) {
+        $('.ipoteka-partners__slider').slick({
+            slidesToShow: 6,
+            dots: false,
+            arrows: true
+        });
+
+        $('.ipoteka-partners__slide').matchHeight();
+    }
 })
