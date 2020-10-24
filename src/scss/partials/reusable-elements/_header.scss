@@ -87,6 +87,14 @@
 
 @media screen and (max-width: 1200px) {
     .header {
+
+        &_ipoteka {
+            .header__logo {
+                img {
+                    min-width: 345px;
+                }
+            }
+        }
         &__logo {
             overflow: hidden;
             max-width: 43px;
@@ -115,6 +123,14 @@
         padding-top: 10px;
         padding-bottom: 24px;
         position: relative;
+
+        &_ipoteka {
+            .header__logo {
+                img {
+                    min-width: auto;
+                }
+            }
+        }
 
         &__wrap {
             justify-content: space-between;
@@ -173,7 +189,11 @@
 
 @media screen and (max-width: 768px) {
     .header {
-
+        &_ipoteka {
+            .header__logo {
+                max-width: 240px;
+            }
+        }
         &__logo {
             max-width: 140px;
             min-width: 106px;
@@ -208,6 +228,11 @@
 
 @media screen and (max-width: 576px) {
     .header {
+        &_ipoteka {
+            .header__logo {
+                max-width: 150px;
+            }
+        }
         &__logo {
             max-width: 106px;
         }

@@ -1533,7 +1533,6 @@ textarea {
 .ipoteka .ipoteka-partners {
   padding: 110px 0 130px; }
   .ipoteka .ipoteka-partners__title {
-    font-size: 50px;
     line-height: 130%;
     color: #292929;
     margin-bottom: 30px; }
@@ -1616,7 +1615,6 @@ textarea {
     height: 550px;
     background-image: url(../img/ipoteka-chance.png); }
   .ipoteka .ipoteka-chance__title {
-    font-size: 50px;
     line-height: 130%;
     color: #FFFFFF;
     margin-bottom: 30px;
@@ -1764,6 +1762,372 @@ textarea {
       .ipoteka .ipoteka-feedback__form__checkbox-text a {
         color: #7889A7;
         text-decoration: underline; }
+
+@media screen and (max-width: 1560px) {
+  .ipoteka .ipoteka-get {
+    padding: 125px 0 120px; }
+    .ipoteka .ipoteka-get__title {
+      margin-bottom: 20px; }
+    .ipoteka .ipoteka-get__subtitle {
+      font-size: 21px;
+      margin-bottom: 60px; }
+    .ipoteka .ipoteka-get__item {
+      padding: 40px; }
+    .ipoteka .ipoteka-get__item__top {
+      padding-bottom: 30px; }
+    .ipoteka .ipoteka-get__item__title {
+      font-size: 40px; }
+    .ipoteka .ipoteka-get__item__text {
+      font-size: 18px; }
+    .ipoteka .ipoteka-get__item__list {
+      margin: 30px 0; }
+      .ipoteka .ipoteka-get__item__list li {
+        padding-left: 30px;
+        font-size: 18px; }
+        .ipoteka .ipoteka-get__item__list li:not(:last-of-type) {
+          margin-bottom: 10px; }
+        .ipoteka .ipoteka-get__item__list li:before {
+          top: 13px; }
+      .ipoteka .ipoteka-get__item__list_light-green li {
+        padding-left: 43px; }
+        .ipoteka .ipoteka-get__item__list_light-green li:before {
+          top: 2px; }
+  .ipoteka .ipoteka-partners {
+    padding: 80px 0; }
+    .ipoteka .ipoteka-partners__title {
+      margin-bottom: 20px; }
+    .ipoteka .ipoteka-partners__subtitle {
+      font-size: 21px; }
+    .ipoteka .ipoteka-partners__slider {
+      margin-top: 70px; }
+  .ipoteka .ipoteka-chance:after {
+    right: -250px; }
+  .ipoteka .ipoteka-chance__title {
+    margin-bottom: 20px; }
+  .ipoteka .ipoteka-chance__subtitle {
+    font-size: 21px; }
+  .ipoteka .ipoteka-feedback {
+    padding-bottom: 80px; }
+    .ipoteka .ipoteka-feedback__left {
+      background-position: center center; }
+    .ipoteka .ipoteka-feedback__form {
+      padding: 40px 40px; }
+      .ipoteka .ipoteka-feedback__form__title {
+        font-size: 21px; }
+      .ipoteka .ipoteka-feedback__form__input {
+        padding: 0 25px;
+        font-size: 18px;
+        width: 100%;
+        height: 50px; }
+      .ipoteka .ipoteka-feedback__form__submit {
+        font-size: 18px;
+        line-height: 1;
+        height: 50px; }
+      .ipoteka .ipoteka-feedback__form__checkbox-text {
+        font-size: 16px; } }
+
+@media screen and (max-width: 1200px) {
+  .ipoteka .ipoteka-get {
+    padding: 125px 0 80px; }
+    .ipoteka .ipoteka-get__subtitle {
+      font-size: 18px;
+      margin-bottom: 40px; }
+    .ipoteka .ipoteka-get__item {
+      padding: 30px; }
+    .ipoteka .ipoteka-get__item__top {
+      padding-bottom: 20px; }
+    .ipoteka .ipoteka-get__item__title {
+      font-size: 30px;
+      margin-bottom: 10px; }
+    .ipoteka .ipoteka-get__item__text {
+      font-size: 16px; }
+    .ipoteka .ipoteka-get__item__list {
+      margin: 20px 0; }
+      .ipoteka .ipoteka-get__item__list li {
+        padding-left: 23px;
+        font-size: 16px; }
+        .ipoteka .ipoteka-get__item__list li:not(:last-of-type) {
+          margin-bottom: 10px; }
+        .ipoteka .ipoteka-get__item__list li:before {
+          top: 11px;
+          width: 12px; }
+      .ipoteka .ipoteka-get__item__list_light-green li {
+        padding-left: 23px; }
+        .ipoteka .ipoteka-get__item__list_light-green li:before {
+          top: 5px;
+          width: 16px;
+          height: 12px;
+          background-size: cover; }
+    .ipoteka .ipoteka-get__btn {
+      font-size: 18px;
+      width: 300px;
+      height: 60px; }
+  .ipoteka .ipoteka-partners__subtitle {
+    font-size: 18px; }
+  .ipoteka .ipoteka-partners__slider {
+    margin-top: 50px; }
+  .ipoteka .ipoteka-chance {
+    padding: 80px 0; }
+    .ipoteka .ipoteka-chance:before {
+      width: 300px;
+      height: 300px;
+      background-size: cover; }
+    .ipoteka .ipoteka-chance:after {
+      width: 400px;
+      height: 400px;
+      right: 0;
+      background-size: cover; }
+    .ipoteka .ipoteka-chance__subtitle {
+      font-size: 18px;
+      margin-bottom: 70px; }
+    .ipoteka .ipoteka-chance__btn {
+      font-size: 18px;
+      width: 300px;
+      height: 60px; }
+  .ipoteka .ipoteka-feedback__title {
+    font-size: 40px; }
+  .ipoteka .ipoteka-feedback__left {
+    padding: 70px 30px; }
+    .ipoteka .ipoteka-feedback__left:before {
+      width: 30px;
+      height: 30px;
+      background-size: cover; }
+  .ipoteka .ipoteka-feedback__form {
+    padding: 40px 30px; }
+    .ipoteka .ipoteka-feedback__form__title {
+      font-size: 18px; }
+    .ipoteka .ipoteka-feedback__form__input {
+      padding: 0 20px;
+      font-size: 16px; }
+    .ipoteka .ipoteka-feedback__form__submit {
+      font-size: 16px; }
+    .ipoteka .ipoteka-feedback__form__checkbox-text {
+      font-size: 14px; } }
+
+@media screen and (max-width: 992px) {
+  .ipoteka .ipoteka-get {
+    padding: 30px 0 80px; }
+    .ipoteka .ipoteka-get__subtitle {
+      font-size: 16px; }
+    .ipoteka .ipoteka-get__item {
+      padding: 20px; }
+    .ipoteka .ipoteka-get__item__top {
+      padding-bottom: 10px; }
+    .ipoteka .ipoteka-get__item__title {
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .ipoteka .ipoteka-get__item__text {
+      font-size: 14px; }
+    .ipoteka .ipoteka-get__item__list {
+      margin: 10px 0; }
+      .ipoteka .ipoteka-get__item__list li {
+        padding-left: 23px;
+        font-size: 14px; }
+        .ipoteka .ipoteka-get__item__list li:not(:last-of-type) {
+          margin-bottom: 10px; }
+        .ipoteka .ipoteka-get__item__list li:before {
+          top: 8px;
+          width: 12px; }
+      .ipoteka .ipoteka-get__item__list_light-green li {
+        padding-left: 23px; }
+        .ipoteka .ipoteka-get__item__list_light-green li:before {
+          top: 4px;
+          width: 16px;
+          height: 12px;
+          background-size: cover; }
+    .ipoteka .ipoteka-get__btn {
+      font-size: 16px;
+      width: 240px;
+      height: 55px; }
+  .ipoteka .ipoteka-partners {
+    padding: 50px 0; }
+    .ipoteka .ipoteka-partners__subtitle {
+      font-size: 16px; }
+  .ipoteka .ipoteka-chance {
+    padding: 60px 0; }
+    .ipoteka .ipoteka-chance:before {
+      width: 250px;
+      height: 250px;
+      background-size: cover; }
+    .ipoteka .ipoteka-chance:after {
+      width: 300px;
+      height: 300px;
+      right: 0;
+      background-size: cover; }
+    .ipoteka .ipoteka-chance__subtitle {
+      font-size: 16px;
+      margin-bottom: 90px; }
+    .ipoteka .ipoteka-chance__btn {
+      font-size: 16px;
+      width: 240px;
+      height: 55px; }
+  .ipoteka .ipoteka-feedback__title {
+    font-size: 35px; }
+  .ipoteka .ipoteka-feedback__left {
+    width: 50%; }
+    .ipoteka .ipoteka-feedback__left:after {
+      display: none; }
+  .ipoteka .ipoteka-feedback__form {
+    width: 50%; }
+    .ipoteka .ipoteka-feedback__form__title {
+      font-size: 18px; }
+    .ipoteka .ipoteka-feedback__form__input {
+      padding: 0 20px;
+      font-size: 16px;
+      width: 100%;
+      height: 50px; }
+    .ipoteka .ipoteka-feedback__form__submit {
+      font-size: 16px;
+      line-height: 1;
+      height: 50px; }
+    .ipoteka .ipoteka-feedback__form__checkbox-text {
+      font-size: 14px; } }
+
+@media screen and (max-width: 768px) {
+  .ipoteka .ipoteka-get {
+    padding: 30px 0 40px; }
+    .ipoteka .ipoteka-get__title {
+      margin-bottom: 10px; }
+    .ipoteka .ipoteka-get__subtitle {
+      font-size: 12px;
+      margin-bottom: 30px; }
+    .ipoteka .ipoteka-get__item__title {
+      font-size: 16px;
+      margin-bottom: 10px; }
+    .ipoteka .ipoteka-get__item__text {
+      font-size: 12px; }
+    .ipoteka .ipoteka-get__item__list {
+      margin: 10px 0; }
+      .ipoteka .ipoteka-get__item__list li {
+        padding-left: 23px;
+        font-size: 12px; }
+        .ipoteka .ipoteka-get__item__list li:not(:last-of-type) {
+          margin-bottom: 10px; }
+        .ipoteka .ipoteka-get__item__list li:before {
+          top: 8px;
+          width: 12px; }
+      .ipoteka .ipoteka-get__item__list_light-green li {
+        padding-left: 23px; }
+        .ipoteka .ipoteka-get__item__list_light-green li:before {
+          top: 2px;
+          width: 16px;
+          height: 12px;
+          background-size: cover; }
+    .ipoteka .ipoteka-get__btn {
+      font-size: 14px;
+      width: 240px;
+      height: 55px;
+      margin: 50px auto 0; }
+  .ipoteka .ipoteka-partners {
+    padding: 40px 0; }
+    .ipoteka .ipoteka-partners__title {
+      margin-bottom: 10px; }
+    .ipoteka .ipoteka-partners__subtitle {
+      font-size: 12px; }
+    .ipoteka .ipoteka-partners__slider {
+      margin-top: 30px; }
+  .ipoteka .ipoteka-chance {
+    padding: 40px 0; }
+    .ipoteka .ipoteka-chance__title {
+      margin-bottom: 10px; }
+    .ipoteka .ipoteka-chance__subtitle {
+      font-size: 12px; }
+    .ipoteka .ipoteka-chance__btn {
+      font-size: 14px;
+      width: 240px;
+      height: 55px; }
+  .ipoteka .ipoteka-feedback__title {
+    font-size: 30px; }
+  .ipoteka .ipoteka-feedback__wrap {
+    display: block; }
+  .ipoteka .ipoteka-feedback__left {
+    width: 100%;
+    padding: 58px 15px; }
+    .ipoteka .ipoteka-feedback__left:before {
+      top: 10px;
+      right: 10px;
+      width: 24px;
+      height: 24px; }
+  .ipoteka .ipoteka-feedback__form {
+    width: 100%;
+    padding: 30px 20px; }
+    .ipoteka .ipoteka-feedback__form__title {
+      font-size: 16px; }
+    .ipoteka .ipoteka-feedback__form__input {
+      padding: 0 15px;
+      font-size: 14px;
+      width: 100%;
+      height: 50px; }
+    .ipoteka .ipoteka-feedback__form__submit {
+      font-size: 14px;
+      line-height: 1;
+      height: 50px; }
+    .ipoteka .ipoteka-feedback__form__checkbox-text {
+      font-size: 12px; } }
+
+@media screen and (max-width: 576px) {
+  .ipoteka .ipoteka-get {
+    padding: 30px 0 40px; }
+    .ipoteka .ipoteka-get__items {
+      display: block;
+      margin: 0; }
+    .ipoteka .ipoteka-get__item {
+      padding: 0;
+      width: 100%;
+      margin: 0 0 30px;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+      .ipoteka .ipoteka-get__item:last-of-type {
+        margin-bottom: 0; }
+    .ipoteka .ipoteka-get__item__top {
+      padding-bottom: 0;
+      border: none; }
+    .ipoteka .ipoteka-get__btn {
+      border-radius: 4px;
+      width: 100%;
+      height: 40px;
+      margin: 30px auto 0; }
+  .ipoteka .ipoteka-partners__slider {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .ipoteka .ipoteka-chance__subtitle {
+    margin-bottom: 75px; }
+  .ipoteka .ipoteka-chance:before {
+    width: 200px;
+    height: 200px;
+    background-size: cover; }
+  .ipoteka .ipoteka-chance:after {
+    width: 200px;
+    height: 200px;
+    right: -32px;
+    background-size: cover; }
+  .ipoteka .ipoteka-chance__btn {
+    border-radius: 4px;
+    height: 40px;
+    width: 190px; }
+  .ipoteka .ipoteka-feedback {
+    padding-bottom: 40px; }
+    .ipoteka .ipoteka-feedback__title {
+      font-size: 20px; }
+    .ipoteka .ipoteka-feedback__form__title {
+      font-size: 12px;
+      margin-bottom: 15px; }
+    .ipoteka .ipoteka-feedback__form__label:not(:last-of-type) {
+      margin-bottom: 15px; }
+    .ipoteka .ipoteka-feedback__form__input {
+      padding: 0 15px;
+      font-size: 12px;
+      width: 100%;
+      height: 30px; }
+    .ipoteka .ipoteka-feedback__form__submit {
+      font-size: 12px;
+      line-height: 1;
+      height: 40px;
+      border-radius: 4px;
+      margin-bottom: 15px; }
+    .ipoteka .ipoteka-feedback__form__checkbox-text {
+      font-size: 10px;
+      max-width: 400px; } }
 
 .offers {
   padding: 210px 0 80px;
@@ -4293,6 +4657,140 @@ textarea {
       line-height: 150%;
       color: #292929; }
 
+@media screen and (max-width: 1560px) {
+  .ipoteka-intro {
+    padding: 100px 0 0;
+    background-position: bottom right -200px; }
+    .ipoteka-intro__items {
+      -webkit-transform: translateY(80px);
+              transform: translateY(80px); }
+    .ipoteka-intro__item {
+      padding: 25px 20px;
+      width: calc((100%/3) - 30px); }
+      .ipoteka-intro__item:nth-of-type(3) {
+        min-width: auto; }
+      .ipoteka-intro__item:nth-of-type(4) {
+        min-width: auto; }
+      .ipoteka-intro__item:nth-of-type(5) {
+        min-width: auto; }
+      .ipoteka-intro__item img {
+        max-width: 50px;
+        margin-bottom: 15px; }
+      .ipoteka-intro__item p {
+        font-size: 16px;
+        line-height: 150%;
+        color: #292929; } }
+
+@media screen and (max-width: 1200px) {
+  .ipoteka-intro {
+    padding: 0;
+    background: none; }
+    .ipoteka-intro__title {
+      max-width: 700px;
+      margin-bottom: 30px; }
+    .ipoteka-intro__subtitle {
+      margin-bottom: 40px;
+      font-size: 20px; }
+    .ipoteka-intro__buttons__item {
+      font-size: 18px;
+      margin-right: 30px;
+      width: 300px;
+      height: 60px; }
+    .ipoteka-intro__buttons__text {
+      font-size: 18px;
+      line-height: 140%;
+      color: #7889A7;
+      max-width: 240px; }
+    .ipoteka-intro__item p {
+      font-size: 14px; } }
+
+@media screen and (max-width: 992px) {
+  .ipoteka-intro {
+    padding: 80px 0 0; }
+    .ipoteka-intro__subtitle {
+      margin-bottom: 30px;
+      font-size: 18px; }
+    .ipoteka-intro__buttons__item {
+      font-size: 16px;
+      margin-right: 15px;
+      width: 240px;
+      height: 55px; }
+    .ipoteka-intro__buttons__text {
+      font-size: 16px;
+      line-height: 140%;
+      color: #7889A7;
+      max-width: 200px; }
+    .ipoteka-intro__items {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .ipoteka-intro__item {
+      width: calc(50% - 30px);
+      margin: 0 15px 30px; } }
+
+@media screen and (max-width: 768px) {
+  .ipoteka-intro__title {
+    max-width: 400px;
+    margin-bottom: 8px; }
+  .ipoteka-intro__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px; }
+  .ipoteka-intro__buttons__item {
+    font-size: 14px;
+    margin-right: 15px;
+    width: 213px;
+    height: 50px; }
+  .ipoteka-intro__buttons__text {
+    font-size: 14px;
+    line-height: 140%;
+    color: #7889A7;
+    max-width: 180px; }
+  .ipoteka-intro__item p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 576px) {
+  .ipoteka-intro {
+    padding: 60px 0 0;
+    background-image: url(../img/ipoteka-intro-mobile.png);
+    background-position: top 175px center;
+    background-size: 320px 293px;
+    background-repeat: no-repeat; }
+    .ipoteka-intro__subtitle {
+      font-size: 14px;
+      margin-bottom: 280px; }
+    .ipoteka-intro__buttons {
+      display: block;
+      margin-bottom: 30px; }
+    .ipoteka-intro__buttons__item {
+      border-radius: 4px;
+      width: 100%;
+      height: 40px; }
+    .ipoteka-intro__buttons__text {
+      max-width: 100%;
+      margin: 16px 0 0; }
+    .ipoteka-intro__items {
+      margin: 0; }
+    .ipoteka-intro__item {
+      width: 100%;
+      padding: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .ipoteka-intro__item:not(:last-of-type) {
+        margin-bottom: 10px; }
+      .ipoteka-intro__item img {
+        margin: 0 10px 0 0;
+        max-width: 22px; }
+      .ipoteka-intro__item p {
+        font-size: 12px; } }
+
 .header {
   padding: 30px 0 20px; }
   .header_complex {
@@ -4354,6 +4852,8 @@ textarea {
     font-size: 13px; } }
 
 @media screen and (max-width: 1200px) {
+  .header_ipoteka .header__logo img {
+    min-width: 345px; }
   .header__logo {
     overflow: hidden;
     max-width: 43px;
@@ -4372,6 +4872,8 @@ textarea {
     padding-top: 10px;
     padding-bottom: 24px;
     position: relative; }
+    .header_ipoteka .header__logo img {
+      min-width: auto; }
     .header__wrap {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
@@ -4411,6 +4913,8 @@ textarea {
         margin-left: 7px; } }
 
 @media screen and (max-width: 768px) {
+  .header_ipoteka .header__logo {
+    max-width: 240px; }
   .header__logo {
     max-width: 140px;
     min-width: 106px; }
@@ -4431,6 +4935,8 @@ textarea {
     line-height: 16px; } }
 
 @media screen and (max-width: 576px) {
+  .header_ipoteka .header__logo {
+    max-width: 150px; }
   .header__logo {
     max-width: 106px; }
   .header__menu__list {

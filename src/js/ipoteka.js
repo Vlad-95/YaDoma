@@ -76,14 +76,42 @@ $(document).ready(function() {
     });
 
     //одинаковая высота заголовков в блоке "КАК ПОЛУЧИТЬ ИПОТЕКУ?"
-    $('.ipoteka-get__item__top').matchHeight();
+    if($(window).width() > 576) {
+        $('.ipoteka-get__item__top').matchHeight();
+
+    }
 
     //слайдер партнеров
     if($('.ipoteka-partners__slider').length) {
         $('.ipoteka-partners__slider').slick({
             slidesToShow: 6,
             dots: false,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: false,
+                        centerMode: true,
+                    }
+                },
+                {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '100px'
+                    }
+                }
+            ]
         });
 
         $('.ipoteka-partners__slide').matchHeight();
