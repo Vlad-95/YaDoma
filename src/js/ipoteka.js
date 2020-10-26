@@ -44,18 +44,20 @@ $(document).ready(function() {
         theme: ""
     });
 
-    $(document).on('click', function(evt) {
-        let target = evt.target;
+    $('.ipoteka__select select').select2();
 
-        // выпадашка селектов
-        if ($(target).hasClass('ipoteka__select__current')) {
-            $('.ipoteka__select__current').not($(target)).next().fadeOut();
-            $(target).next().fadeToggle();
+    // $(document).on('click', function(evt) {
+    //     let target = evt.target;
+
+    //     // выпадашка селектов
+    //     if ($(target).hasClass('ipoteka__select__current')) {
+    //         $('.ipoteka__select__current').not($(target)).next().fadeOut();
+    //         $(target).next().fadeToggle();
             
-        } else {
-            $('.ipoteka__select__dropdown').fadeOut();
-        }
-    });
+    //     } else {
+    //         $('.ipoteka__select__dropdown').fadeOut();
+    //     }
+    // });
 
     // клик по варианту селекта
     $('.ipoteka__select__dropdown__item').click(function() {

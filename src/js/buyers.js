@@ -31,26 +31,26 @@ $(document).ready(function() {
         let diff = nextSlide - currentSlide;
         
         // показ боковых слайдов
-        $('.buyers__slider .slick-slide .buyers__slider__item').removeClass('visible');
-        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 2)+'"] .buyers__slider__item').addClass('visible');//1я позиция
-        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 1)+'"] .buyers__slider__item').addClass('visible');//2я позиция
-        $('.buyers__slider .slick-slide[data-slick-index="'+nextSlide+'"] .buyers__slider__item').addClass('visible');//3я позиция
-        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 1)+'"] .buyers__slider__item').addClass('visible');//4я позиция
-        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 2)+'"] .buyers__slider__item').addClass('visible');//5я позиция
+        $('.buyers__slider .slick-slide.buyers__slider__item').removeClass('visible');
+        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 2)+'"].buyers__slider__item').addClass('visible');//1я позиция
+        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 1)+'"].buyers__slider__item').addClass('visible');//2я позиция
+        $('.buyers__slider .slick-slide[data-slick-index="'+nextSlide+'"].buyers__slider__item').addClass('visible');//3я позиция
+        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 1)+'"].buyers__slider__item').addClass('visible');//4я позиция
+        $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 2)+'"].buyers__slider__item').addClass('visible');//5я позиция
         
         //свайп вперед
         if (currentSlide < nextSlide) {      
                 
             //свайп вперед на 2 слайда
             if (diff == 2) {
-                $('.buyers__slider .slick-slide .buyers__slider__item').removeClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 1)+'"] .buyers__slider__item').addClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+(currentSlide + 1)+'"] .buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide.buyers__slider__item').removeClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 1)+'"].buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+(currentSlide + 1)+'"].buyers__slider__item').addClass('scale');
             } else if (diff == 1) {
                 // свайп вперед на 1 слайд
-                $('.buyers__slider .slick-slide .buyers__slider__item').removeClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 1)+'"] .buyers__slider__item').addClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+currentSlide+'"] .buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide.buyers__slider__item').removeClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide + 1)+'"].buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+currentSlide+'"].buyers__slider__item').addClass('scale');
             }
             
         } else {
@@ -58,14 +58,14 @@ $(document).ready(function() {
             
             //свайп назад на 2 слайда
             if (diff == -2) {
-                $('.buyers__slider .slick-slide .buyers__slider__item').removeClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 1)+'"] .buyers__slider__item').addClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+(currentSlide - 1)+'"] .buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide.buyers__slider__item').removeClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 1)+'"].buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+(currentSlide - 1)+'"].buyers__slider__item').addClass('scale');
             } else if (diff == -1) {
                 // свайп назад на 1 слайд
-                $('.buyers__slider .slick-slide .buyers__slider__item').removeClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 1)+'"] .buyers__slider__item').addClass('scale');
-                $('.buyers__slider .slick-slide[data-slick-index="'+currentSlide+'"] .buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide.buyers__slider__item').removeClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+(nextSlide - 1)+'"].buyers__slider__item').addClass('scale');
+                $('.buyers__slider .slick-slide[data-slick-index="'+currentSlide+'"].buyers__slider__item').addClass('scale');
             }            
         }
     });

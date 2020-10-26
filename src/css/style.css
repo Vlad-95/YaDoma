@@ -3237,6 +3237,145 @@ textarea {
     .faq__item__answer {
       font-size: 12px; } }
 
+.modal {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  max-width: 1270px;
+  max-height: calc(100vh - 200px);
+  background: #F6F6F6;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 100px 130px 60px;
+  overflow: auto;
+  display: none; }
+  .modal__close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer; }
+    .modal__close span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #7889A7; }
+      .modal__close span:nth-of-type(1) {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .modal__close span:nth-of-type(2) {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+  .modal__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -15px; }
+  .modal__item {
+    margin: 0 15px;
+    width: calc(100% - 30px); }
+  .modal__item__info {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 40px 10px 30px; }
+  .modal__item__image {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto 30px; }
+    .modal__item__image img {
+      display: block; }
+  .modal__item__name {
+    font-size: 23px;
+    line-height: 150%;
+    color: #292929;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 42px; }
+  .modal__item__phone {
+    font-size: 20px;
+    line-height: 150%;
+    color: #292929;
+    display: block;
+    text-align: center; }
+  .modal__item__email {
+    font-size: 20px;
+    line-height: 150%;
+    color: #3148ED;
+    display: block;
+    text-align: center; }
+  .modal__item__descr {
+    padding: 24px 30px 20px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background-color: #1D91FF;
+    max-width: 410px;
+    margin: 46px auto 0;
+    position: relative; }
+    .modal__item__descr::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -8px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8.5px 8px 8.5px;
+      border-color: transparent transparent #1D91FF transparent; }
+
+@media screen and (max-width: 992px) {
+  .modal {
+    padding: 80px 80px 60px; } }
+
+@media screen and (max-width: 768px) {
+  .modal {
+    top: 50px;
+    padding: 80px 40px 60px; }
+    .modal__item__name {
+      font-size: 14px;
+      line-height: 150%;
+      color: #292929;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 42px; }
+    .modal__item__phone {
+      font-size: 14px;
+      line-height: 150%;
+      color: #292929;
+      display: block;
+      text-align: center; }
+    .modal__item__email {
+      font-size: 14px; }
+    .modal__item__descr {
+      padding: 20px 15px 20px;
+      font-size: 16px; } }
+
+@media screen and (max-width: 576px) {
+  .modal {
+    top: 50px;
+    padding: 80px 40px 60px; }
+    .modal__wrap {
+      display: block;
+      margin: 0; }
+    .modal__item {
+      margin: 0;
+      width: 100%; }
+      .modal__item:not(:last-of-type) {
+        margin-bottom: 30px; } }
+
 .intro {
   padding: 225px 0 0; }
   .intro__title {
@@ -3364,7 +3503,11 @@ textarea {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: relative;
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+    .buyers__slider__item.visible {
+      opacity: 1; }
   .buyers__slider__item__image {
     max-height: 212px;
     overflow: hidden; }
@@ -3398,19 +3541,17 @@ textarea {
     text-align: center;
     position: relative;
     z-index: 1; }
-    .buyers .slick-slide .buyers__slider__item.scale {
+    .buyers .slick-slide.buyers__slider__item.scale {
       -webkit-transform: scale(1.13);
               transform: scale(1.13);
       -webkit-transition: 0.3s;
       transition: 0.3s;
       z-index: 2; }
-    .buyers .slick-slide .buyers__slider__item.visible {
-      opacity: 1; }
   .buyers .slick-center {
     z-index: 3; }
     .buyers .slick-center + .slick-slide {
       z-index: 2; }
-    .buyers .slick-center .buyers__slider__item {
+    .buyers .slick-center.buyers__slider__item {
       -webkit-transform: scale(1.26);
               transform: scale(1.26);
       -webkit-box-shadow: 0px 24px 58px rgba(247, 113, 26, 0.78);
@@ -3679,53 +3820,22 @@ textarea {
   border: 1px solid #C7D4DF;
   border-radius: 5px;
   width: 100%; }
-  .ipoteka__select__current {
-    font-size: 20px;
-    line-height: 145%;
-    color: #292929;
-    padding: 12px 15px 8px;
-    position: relative;
-    cursor: pointer; }
-    .ipoteka__select__current:after {
-      content: '';
-      position: absolute;
-      background-image: url(../img/icons/filter-arrow.svg);
-      right: 15px;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      width: 15px;
-      height: 8px; }
-  .ipoteka__select__dropdown {
-    display: none;
-    position: absolute;
-    background-color: #FFFFFF;
-    top: 100%;
-    left: 0;
-    width: 100%;
+  .ipoteka__select__input {
+    display: block;
+    width: 100%; }
+  .ipoteka__select .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: none;
+    border: none;
+    color: #7889A7;
     font-size: 18px;
-    line-height: 150%;
-    color: #292929;
-    border: 1px solid #C7D4DF;
-    z-index: 2; }
-  .ipoteka__select__dropdown__item {
-    position: relative;
-    padding: 12px 10px 10px 40px;
-    cursor: pointer; }
-    .ipoteka__select__dropdown__item:before {
-      position: absolute;
-      left: 10px;
-      top: 18px;
-      content: '';
-      width: 20px;
-      height: 15px;
-      background-image: url(../img/icons/check.svg);
-      background-size: cover;
-      -webkit-transition: 0.2s;
-      transition: 0.2s;
-      opacity: 0; }
-    .ipoteka__select__dropdown__item.active:before, .ipoteka__select__dropdown__item:hover:before {
-      opacity: 1; }
+    line-height: 135%;
+    margin-top: 7px; }
+  .ipoteka__select .select2-container--default .select2-results > .select2-results__options {
+    font-size: 14px !important;
+    font-family: "Mazzard H", sans-serif; }
+  .ipoteka__select .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #1D91FF;
+    font-weight: 400; }
 
 @media screen and (max-width: 1200px) {
   .ipoteka-section__title {

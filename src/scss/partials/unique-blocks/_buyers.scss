@@ -12,7 +12,12 @@
         overflow: hidden;
         transition: 0.3s;
         position: relative;
-        opacity: 0;        
+        opacity: 0;      
+        transform: scale(1);
+        
+        &.visible {
+            opacity: 1;
+        }
     }
 
     &__slider__item__image {
@@ -62,7 +67,7 @@
         position: relative;
         z-index: 1;
 
-        .buyers__slider__item {
+        &.buyers__slider__item {
             &.scale {
             
             transform: scale(1.13);
@@ -70,9 +75,7 @@
             z-index: 2;
             }
 
-            &.visible {
-                opacity: 1;
-            }
+            
         }
     }
 
@@ -82,7 +85,7 @@
         & + .slick-slide {
             z-index: 2;
         }
-        .buyers__slider__item {
+        &.buyers__slider__item {
             transform: scale(1.26);
             box-shadow: 0px 24px 58px rgba(247, 113, 26, 0.78);
             transition: 0.3s;
